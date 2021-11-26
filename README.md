@@ -31,7 +31,7 @@ User can read and user registered can add, edit and delete.
 
 A website application that allows users to view 16 bit console game details and user reviews by method of search using key words in relation to the console brands available or key words pertaining to the games featured on the site. Upon completion of user registering a username and password, user can further search and add their own reviews alongside the game and click on a star based rating function. User will be able to edit and/or delete their reviews and whilst this information is visible to all users, editing and deletion will only be achieved by the user who added this.
 
-Name Ideas:
+### Name Ideas:
 
 Retro Ratings
 16 Bit Reviews
@@ -41,7 +41,7 @@ Megabit Reviews
 Retro Reviews
 
 
-Definition of the genre:
+### Definition of the genre:
 16 bit (4th generation console games including: 
 Mega Drive
 Super Nintendo
@@ -52,17 +52,49 @@ Neo Geo
 ## User Stories:
 * Visitors can want to know more about the content of the site.
 * New visitors want to easily navigate the website.
-* Users want to register their details on the site to be able to add to the site.
-* Users want to add their own video game details and review.
+* Users want to register their details on the site to be able to add reviews and rate the game.
 * The user wants to be able to view other user reviews.
+* User wants to be directed to where they can buy the game.
 ## Features:
-* User friendly application which is responsive.
-* Easy navigation menu.
-* Intuitive search feature.
+* User friendly, responsive site that loads quickly and is intuitive.
+* Simple Navbar that is also collapsable for smaller media.
+* Search and filter feature.
 * Users can add, edit or delete their video games data and review.
 ## Structure:
-* All pages will have a top navigation bar.
-* Main content will be centered horizontally and vertically.
-* Search results will be displayed in a grid of recipe cards.
-* Profile pages will feature that users' recipes.
-* Dedicated page for each recipe to allow bookmarking of recipes
+* Each web page will display Navbar.
+* Layout will display the games in a semetrical display.
+* Game and review data will load up on each page.
+
+
+
+
+
+
+
+
+
+
+
+
+# Database Schema (MongoDB)
+
+User Collection
+Schema
+
+
+
+Games
+Schema
+
+
+Libraries used
+* Flask a framework of Python used to build the web application.
+* PyMongo used to link Flask and MongoDB database.
+* MongoDB was used for the database.
+* Bootstrap used for content styling.
+* StartBootrstrap used for pre-built page layouts.
+* Jquery (Javascript) included in the project for front end animation of buttons and navbar, dropdown etc.
+* Werkzeug used for hass password security
+
+
+
