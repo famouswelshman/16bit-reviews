@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>16bit Reviews</title>
-</head>
-<body>
-   <h1>HELLO WORLD</h1>
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>THIS IS THE TASKS CONTENT</h2>
+    
    {% for task in tasks %}
         {{ task.console_name }}<br>
         {{ task.review_title }}<br>
@@ -16,6 +11,4 @@
         {{ task.rating }}<br>
     {% endfor %}
 
-
-</body>
-</html>
+{% endblock %}
