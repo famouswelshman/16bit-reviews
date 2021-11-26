@@ -119,6 +119,7 @@ Schema
 
 ## Libraries used
 * Flask a framework of Python used to build the web application.
+* Jinja template language.
 * PyMongo used to link Flask and MongoDB database.
 * MongoDB was used for the database.
 * Bootstrap used for content styling.
