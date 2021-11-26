@@ -123,6 +123,7 @@ Schema
 * PyMongo used to link Flask and MongoDB database.
 * MongoDB was used for the database.
 * Bootstrap used for content styling.
+* Font Awesome for font and symbols.
 * StartBootrstrap used for pre-built page layouts.
 * Jquery (Javascript) included in the project for front end animation of buttons and navbar, dropdown etc.
 * Werkzeug used for hash password security.
