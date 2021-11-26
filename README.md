@@ -50,19 +50,19 @@ Neo Geo
 
 
 ## User Stories:
-•	Visitors can want to know more about the content of the site.
-•	New visitors want to easily navigate the website.
-•	Users want to register their details on the site to be able to add to the site.
-•	Users want to add their own video game details and review.
-•	The user wants to be able to view other user reviews.
+* Visitors can want to know more about the content of the site.
+* New visitors want to easily navigate the website.
+* Users want to register their details on the site to be able to add to the site.
+* Users want to add their own video game details and review.
+* The user wants to be able to view other user reviews.
 ## Features:
-•	User friendly application which is responsive.
-•	Easy navigation menu.
-•	Intuitive search feature.
-•	Users can add, edit or delete their video games data and review.
+* User friendly application which is responsive.
+* Easy navigation menu.
+* Intuitive search feature.
+* Users can add, edit or delete their video games data and review.
 ## Structure:
-•	All pages will have a top navigation bar.
-•	Main content will be centered horizontally and vertically.
-•	Search results will be displayed in a grid of recipe cards.
-•	Profile pages will feature that users' recipes.
-•	Dedicated page for each recipe to allow bookmarking of recipes
+* All pages will have a top navigation bar.
+* Main content will be centered horizontally and vertically.
+* Search results will be displayed in a grid of recipe cards.
+* Profile pages will feature that users' recipes.
+* Dedicated page for each recipe to allow bookmarking of recipes
