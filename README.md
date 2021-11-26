@@ -11,12 +11,12 @@ User can read and user registered can add, edit and delete.
 
 A website application that allows users to view 16 bit console game details and user reviews by method of search using key words in relation to the console brands available or key words pertaining to the games featured on the site. Upon completion of user registering a username and password, user can further search and add their own reviews alongside the game and click on a star based rating function. User will be able to edit and/or delete their reviews and whilst this information is visible to all users, editing and deletion will only be achieved by the user who added this.
 
-## Project Ideas
+# Project Ideas
 
 Retro game reviews
 16 bit game reviews
 
-### Name Ideas:
+## Name Ideas:
 
 Retro Ratings
 16 Bit Reviews
@@ -25,7 +25,7 @@ BitBit
 Megabit Reviews
 Retro Reviews
 
-### Definition of the genre:
+## Definition of the genre:
 16 bit (4th generation console games including: 
 Mega Drive
 Super Nintendo
