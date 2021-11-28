@@ -670,10 +670,17 @@ progress {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-top: 50px;
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+
+.row-card {
+  text-align: center;
+  margin-top: 25px;
+  
+}
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
