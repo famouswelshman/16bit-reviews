@@ -11,13 +11,13 @@
           
             <!-----Username input -->
             <div class="form-outline mb-4">
-              <input type="username" id="username" name="username" class="form-control">
+              <input type="username" id="username" name="username" minlength="5" maxlength="15" pattern="^[a-zA-ZO-9]{5,15}$" class="form-control" required>
               <label for="username">Username</label>
             </div>
           
             <!-- Password input -->
             <div class="form-outline mb-4">
-              <input type="password" id="password" name="password" class="form-control" />
+              <input type="password" id="password" name="password" minlength="5" maxlength="15" pattern="^[a-zA-ZO-9]{5,15}$" class="form-control" required>
               <label for="password">Password</label>
             </div>
           
