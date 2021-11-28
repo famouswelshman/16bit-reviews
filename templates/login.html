@@ -6,8 +6,8 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
       
-      <form method="POST" action="{{ url_for('register') }}">
-          <h1 class="center-align">Register</h1>
+      <form method="POST" action="{{ url_for('login') }}">
+          <h1 class="center-align"> Log In</h1>
           
             <!-----Username input -->
             <div class="form-outline mb-4">
@@ -24,15 +24,18 @@
           
             <!-- Submit button -->
             <div class="submit-register">
-              <button type="submit" class="btn btn-primary btn-block mb-4">Register</button>
+              <button type="submit" class="btn btn-primary btn-block mb-4">Log In</button>
             </div>
             
-              <!-- Log In now link -->
+          
+            <!-- Register now link -->
             <div class="text-center">
-              <a href="{{ url_for('login') }}">Log In</a>
+              <a href="{{ url_for('register') }}"><p>Not Registered?</p></a>
             </div>
           </form>
-          </div>
+        </div>
+
+        
   
 
 
