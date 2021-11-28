@@ -64,6 +64,14 @@
   --bs-body-bg: #fff;
 }
 
+.col-md-4 {
+  margin-bottom: 50px;
+}
+
+.submit-register {
+  text-align: center;
+}
+
 *,
 *::before,
 *::after {
