@@ -115,7 +115,7 @@ Schema
 # Media Credits
 
 # Other Credits
-
+StartBootstrap - E-Commerce template downloaded and customozed for project
 
 ## Libraries used
 * Flask a framework of Python used to build the web application.
