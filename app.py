@@ -18,10 +18,10 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/get_tasks")
+@app.route("/reviews")
 def get_tasks():
     tasks = mongo.db.tasks.find()
-    return render_template("tasks.html", tasks=tasks)
+    return render_template("reviews.html", tasks=tasks)
 
 # REGISTRATION 
 @app.route("/register", methods=["GET", "POST"])

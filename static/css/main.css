@@ -87,6 +87,12 @@
   height: 20rem;
 }
 
+.main-container {
+  border-style: double;
+  color: green;
+  background-color: #0f5132;
+}
+
 *,
 *::before,
 *::after {
