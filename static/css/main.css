@@ -64,6 +64,12 @@
   --bs-body-bg: #fff;
 }
 
+.hero-title {
+  font-size: 75px;
+  text-shadow: #000;
+  font-family: monospace;
+}
+
 .col-md-4 {
   margin-bottom: 50px;
 }
@@ -75,6 +81,10 @@
 .flash-message {
   line-height: 2;
   text-align: center;
+}
+
+.masthead {
+  height: 20rem;
 }
 
 *,
