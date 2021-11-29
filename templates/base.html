@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        
+    <script src="https://kit.fontawesome.com/8165034b51.js" crossorigin="anonymous"></script>
     {% block styles %}
     {% endblock %}
 
@@ -27,21 +27,25 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('get_tasks') }}">Home</a></li>
+                    {% if session.user %}
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Log In</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Log Out</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Creat a review</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Manage your reviews</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Log Out</a></li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
                     <li class="nav-item dropdown">
-
-                  
+                    {% endif %}
 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li class="nav-item"><a class="nav-link" href="{{ url_for('get_tasks') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Log In</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Log Out</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Log Out</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                         </ul>
@@ -105,5 +109,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    
 </body>
 </html>
