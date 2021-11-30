@@ -18,16 +18,12 @@ mongo = PyMongo(app)
 
 
 
+
 @app.route("/")
 @app.route("/home")
-def home():
-    return render_template("home.html")
-
-
-@app.route("/create_review")
 def get_tasks():
     tasks = mongo.db.tasks.find()
-    return render_template("create_review.html", tasks=tasks)
+    return render_template("home.html", tasks=tasks)
 
 # REGISTRATION 
 @app.route("/register", methods=["GET", "POST"])
@@ -93,16 +89,16 @@ def profile(username):
 
     return redirect(url_for("login"))
 
+# removes the user from the session cookies
 @app.route("/logout")
 def logout():
-    # removes the user from the session cookies
     flash("You have successfully logged out")
     session.pop("user")
     return redirect(url_for("login"))
 
-
+# Create a new review
 @app.route("/create_review")
-def add_task():
+def create_review():
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("create_review.html", categories=categories)
 
