@@ -3,9 +3,9 @@
 
     
     <h3 class="light-blue-text text-darken-4 center align">Add Review</h3>
-
+  <!----------   CONSOLE SELECTOR DROPDOWN------->
     <div class="row card-panel grey lighten-5">
-        <form class="col s12" method="POST" action="">
+        <form class="col s12" method="POST" action="{{ url_for('create_review') }}">
             <div class="row">
                 <div class="input-field col s12">
                     <select id="console_name" name="console_name" class="validate" required>
@@ -15,31 +15,30 @@
                         {% endfor %}
                     </select>
                 <label for="category_name">Choose Game Console</label>
-        
             <br>
             <br>
-
           <br>
           <br>
           <br>
-          <!------ CONSOLE TYPE INPUT -->
-          <div class="mb-3">
-        <input type="text" class="validate" id="console_name" placeholder=".........................." required>
-        <label for="console_name" class="form-label">Add Game Name</label>
-      </div>
 
         <!----- GAME NAME INPUT ---->
       <div class="mb-3">
-        <input type="text" class="validate" id="console_name" placeholder="Sega Mega Drive / Super Nintendo / Neo Geo" required>
-        <label for="console_name" class="form-label">Console Name</label>
+        <input type="text" class="validate" id="game_name" name="game_name" required>
+        <label for="game_name">Game Name</label>
       </div>
       
+      <!------ review TITLE ------------->
+      <div class="mb-3">
+        <input type="text" class="validate" id="review_title" name="review_title" required>
+        <label for="review_title">Add Review Title</label>
+      </div>
+
         <!---- REVIEW DETAILS INPUT ----->
-        
         <textarea class="validate" id="review_input" name="review_input" minlength="15" maxlength="200" rows="10" style="width: 700px" required></textarea>
-        <label for="exampleFormControlTextarea1" class="form-label">Your Review</label>
+        <label for="review_input">Your Review</label>
       </div>
       <br>
+
       <!---- SUBMIT THIS INFO TO DATABASE BUTTON -->
       <input class="btn btn-primary" type="submit" value="Submit">
       <br>

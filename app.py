@@ -96,11 +96,21 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
+
 # Create a new review
-@app.route("/create_review")
+@app.route("/create_review", methods=["GET", "POST"])
 def create_review():
+    if request.method == "POST":
+        review = {
+            "console_name": request.form.get("console_name"),
+            "game_name": request.form.get("game_name"),
+            "review_title": request.form.get("review_title"),
+            "review_input": request.form.get("review_input")
+        }
+        mongo.db.tasks.insert_one(review)
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("create_review.html", categories=categories)
+
 
 
 
