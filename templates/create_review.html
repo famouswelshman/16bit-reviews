@@ -2,6 +2,26 @@
 {% block content %}
 
     
+
+<div class="main-container">
+  MAIN CONTAINER
+  <div class="d-flex align-items-start bg-light mb-3" style="height: 100px;">
+      <div class="col">One of three columns<div class="form-outline">
+          <input type="text" id="form12" class="form-control" />
+          <label class="form-label" for="form12">Example label</label>
+        </div></div>
+      <div class="col">One of three columns<div class="form-outline">
+          <input type="text" id="form12" class="form-control" />
+          <label class="form-label" for="form12">Example label</label>
+        </div></div>
+      <div class="col">One of three columns<div class="form-outline">
+          <input type="text" id="form12" class="form-control" />
+          <label class="form-label" for="form12">Example label</label>
+        </div></div>
+    </div>
+</div>
+
+
     <h3 class="light-blue-text text-darken-4 center align">Add Review</h3>
   <!----------   CONSOLE SELECTOR DROPDOWN------->
     <div class="row card-panel grey lighten-5">
@@ -26,6 +46,12 @@
         <input type="text" class="validate" id="game_name" name="game_name" required>
         <label for="game_name">Game Name</label>
       </div>
+
+      <div class="input-field col s12 m6">
+        <input id="image_url" type="url" name="image_url" autocomplete="off">
+        <label for="image_url">Image URL</label>
+        <span class="helper-text">Enter full valid URL to image, or leave blank if no image available</span>
+    </div>
       
       <!------ review TITLE ------------->
       <div class="mb-3">

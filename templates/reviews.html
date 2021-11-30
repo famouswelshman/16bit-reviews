@@ -3,7 +3,7 @@
 
     
    {% for task in tasks %}
-        {{ task.console_name }}<br>
+        <br>
         {{ task.review_title }}<br>
         {{ task.review_input }}<br>
         {{ task.game_name }}<br>
@@ -40,13 +40,14 @@
 
                     <!-- Product image-->
                     <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                    
+                    {{ task.console_name }}
                     <!-- Product details-->
                     <div class="card-body p-4">
+                        
                         <div class="text-center">
 
                             <!-- Product name-->
-                            <h5 class="fw-bolder">Fancy Product</h5>
+                            <h5 class="fw-bolder"></h5>
                             <!-- Product price-->
                             $40.00 - $80.00
                         </div>

@@ -105,7 +105,8 @@ def create_review():
             "console_name": request.form.get("console_name"),
             "game_name": request.form.get("game_name"),
             "review_title": request.form.get("review_title"),
-            "review_input": request.form.get("review_input")
+            "review_input": request.form.get("review_input"),
+            "created_by": session["user"]
         }
         mongo.db.tasks.insert_one(review)
     categories = mongo.db.categories.find().sort("category_name", 1)

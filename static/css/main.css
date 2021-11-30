@@ -93,6 +93,35 @@
   background-color: #0f5132;
 }
 
+.cards {
+ 
+display: grid;
+   
+grid-template-columns: repeat(3, 1fr);
+   
+grid-auto-rows: auto;
+   
+grid-gap: 1rem;
+   
+}
+   
+&amp;amp;nbsp;
+   
+.card {
+   
+border: 2px solid #e7e7e7;
+   
+border-radius: 4px;
+   
+padding: .5rem;
+   
+}
+
+.container-main {
+  flex: auto;
+  width: 100rem;
+}
+
 *,
 *::before,
 *::after {
