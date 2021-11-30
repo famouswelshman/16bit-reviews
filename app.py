@@ -103,7 +103,8 @@ def logout():
 
 @app.route("/create_review")
 def add_task():
-    return render_template("create_review.html")
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("create_review.html", categories=categories)
 
 
 

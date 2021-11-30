@@ -4,19 +4,42 @@
     
     <h3 class="light-blue-text text-darken-4 center align">Add Review</h3>
 
-    <div class="mb-3">
-        <select class="form-select" method="POST" action="" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <div class="row card-panel grey lighten-5">
+        <form class="col s12" method="POST" action="">
+            <div class="row">
+                <div class="input-field col s12">
+                    <select id="category_name" name="category_name" class="validate" required>
+                        <option value="" disabled selected>Choose Category</option>
+                        {% for category in categories %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endfor %}
+                    </select>
+                <label for="category_name">Task Category</label>
+            </div>
+            </div>
+        </form>
+            <br>
+            <br>
+
+          <br>
+          <br>
+          <br>
+          <!------ CONSOLE TYPE INPUT -->
+          <div class="mb-3">
+        <input type="text" class="validate" id="console_name" placeholder="Sega Mega Drive / Super Nintendo / Neo Geo" required>
+        <label for="console_name" class="form-label">Add Game Name</label>
       </div>
+
+        <!----- GAME NAME INPUT ---->
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <input type="text" class="validate" id="console_name" placeholder="Sega Mega Drive / Super Nintendo / Neo Geo" required>
+        <label for="console_name" class="form-label">Console Name</label>
+      </div>
+      
+        <!---- REVIEW DETAILS INPUT ----->
+        
+        <textarea class="validate" id="review_input" name="review_input" minlength="15" maxlength="200" rows="10" style="width: 700px" required></textarea>
+        <label for="exampleFormControlTextarea1" class="form-label">Your Review</label>
       </div>
 
 
