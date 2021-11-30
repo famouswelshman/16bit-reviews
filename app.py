@@ -17,11 +17,17 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+
 @app.route("/")
-@app.route("/reviews")
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
+
+@app.route("/create_review")
 def get_tasks():
     tasks = mongo.db.tasks.find()
-    return render_template("reviews.html", tasks=tasks)
+    return render_template("create_review.html", tasks=tasks)
 
 # REGISTRATION 
 @app.route("/register", methods=["GET", "POST"])
@@ -93,6 +99,12 @@ def logout():
     flash("You have successfully logged out")
     session.pop("user")
     return redirect(url_for("login"))
+
+
+@app.route("/create_review")
+def add_task():
+    return render_template("create_review.html")
+
 
 
 if __name__ == "__main__":
