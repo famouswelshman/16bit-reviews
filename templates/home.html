@@ -1,29 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-    
-   {% for task in tasks %}
-   <br>
-   <br>
-   
-   <div class="cards">
-   <div class="container-sm">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            {{ task.console_name }}
-            <br>
-            {{ task.game_name }}
-          <h5 class="card-title">{{ task.review_title }}</h5>
-
-          <p class="card-text">{{ task.review_input }}</p>
-          {{ task.rating }}
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+<div class="container">
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col">
+        {% include 'card.html' %}
+      </div>
+      <div class="col">
       </div>
     </div>
-    </div>
+  </div>
 
-      {% endfor %}
+
 
 {% endblock %}

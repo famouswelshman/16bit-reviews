@@ -104,6 +104,7 @@ Schema
 ## Flask (Python)
 
 # Summary of Testing
+Getting the review cards to show up in sequenc and semetrically on the home page.
 
 
 # Deployment
