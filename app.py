@@ -97,7 +97,7 @@ def logout():
     return redirect(url_for("login"))
 
 
-# Create a new review
+# Add a new review
 @app.route("/create_review", methods=["GET", "POST"])
 def create_review():
     if request.method == "POST":
@@ -109,6 +109,9 @@ def create_review():
             "created_by": session["user"]
         }
         mongo.db.tasks.insert_one(review)
+        flash("Review successfully created")
+        return redirect(url_for("get_tasks"))
+        
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("create_review.html", categories=categories)
 

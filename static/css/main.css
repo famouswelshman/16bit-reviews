@@ -117,11 +117,6 @@ padding: .5rem;
    
 }
 
-.container-main {
-  flex: auto;
-  width: 100rem;
-}
-
 *,
 *::before,
 *::after {

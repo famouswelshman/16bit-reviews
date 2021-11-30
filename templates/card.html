@@ -2,22 +2,22 @@
    <br>
    <br>
    <br>
-   <div class="cards">
-   <div class="container-sm">
+
     <div class="card" style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
-            {{ task.console_name }}
-            <br>
-            {{ task.game_name }}
           <h5 class="card-title">{{ task.review_title }}</h5>
-
           <p class="card-text">{{ task.review_input }}</p>
-          {{ task.rating }}
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{ task.console_name }}</li>
+          <li class="list-group-item">{{ task.game_name }}</li>
+          <li class="list-group-item">{{ task.rating }}</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
         </div>
       </div>
-    </div>
-    </div>
-    
-    {% endfor %}
+
+      {% endfor %}

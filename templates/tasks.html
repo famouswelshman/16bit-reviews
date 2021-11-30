@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+    
+   {% for task in tasks %}
+        {{ task.console_name }}<br>
+        {{ task.category_name }}<br>
+        {{ task.review_title }}<br>
+        {{ task.review_input }}<br>
+        {{ task.game_name }}<br>
+        {{ task.rating }}<br>
+    {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+{% endblock %}
