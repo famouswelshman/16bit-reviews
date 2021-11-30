@@ -8,14 +8,14 @@
         <form class="col s12" method="POST" action="">
             <div class="row">
                 <div class="input-field col s12">
-                    <select id="category_name" name="category_name" class="validate" required>
+                    <select id="console_name" name="console_name" class="validate" required>
                         <option value="" disabled selected>Choose Category</option>
                         {% for category in categories %}
                             <option value="{{ category.console_name }}">{{ category.console_name }}</option>
                         {% endfor %}
                     </select>
-                <label for="category_name">Task Category</label>
-        </form>
+                <label for="category_name">Choose Game Console</label>
+        
             <br>
             <br>
 
@@ -24,7 +24,7 @@
           <br>
           <!------ CONSOLE TYPE INPUT -->
           <div class="mb-3">
-        <input type="text" class="validate" id="console_name" placeholder="Sega Mega Drive / Super Nintendo / Neo Geo" required>
+        <input type="text" class="validate" id="console_name" placeholder=".........................." required>
         <label for="console_name" class="form-label">Add Game Name</label>
       </div>
 
@@ -39,10 +39,12 @@
         <textarea class="validate" id="review_input" name="review_input" minlength="15" maxlength="200" rows="10" style="width: 700px" required></textarea>
         <label for="exampleFormControlTextarea1" class="form-label">Your Review</label>
       </div>
+      <br>
+      <!---- SUBMIT THIS INFO TO DATABASE BUTTON -->
+      <input class="btn btn-primary" type="submit" value="Submit">
+      <br>
 
-
-
-
+    </form>
 
 
 
