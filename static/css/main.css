@@ -145,6 +145,7 @@ padding: .5rem;
 .create-container .row {
   text-align: center;
   border-style: dotted;
+  background-color: coral;
 }
 
 *,

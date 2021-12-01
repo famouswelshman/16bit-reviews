@@ -17,26 +17,15 @@
         <input type="password" class="form-control" id="exampleInputPassword1">
       </div>
     </div>
-    <div class="row">
     <div class="col">
       Column
     </div>
     <div class="col">
-      <div class="row card-panel grey lighten-5">
-        <form class="col s12" method="POST" action="{{ url_for('create_review') }}">
-            <div class="row">
-                <div class="input-field col s12">
-                    <select id="console_name" name="console_name" class="validate" required>
-                        <option value="" disabled selected>Choose Category</option>
-                        {% for category in categories %}
-                            <option value="{{ category.console_name }}">{{ category.console_name }}</option>
-                        {% endfor %}
-                    </select>
-
+      Column
     </div>
   </div>
 </div>
-</div>
+
 
 <form>
   
@@ -50,7 +39,17 @@
 
     <h3 class="light-blue-text text-darken-4 center align">Add Review</h3>
   <!----------   CONSOLE SELECTOR DROPDOWN------->
-    
+    <div class="row card-panel grey lighten-5">
+        <form class="col s12" method="POST" action="{{ url_for('create_review') }}">
+            <div class="row">
+                <div class="input-field col s12">
+                    <select id="console_name" name="console_name" class="validate" required>
+                        <option value="" disabled selected>Choose Category</option>
+                        {% for category in categories %}
+                            <option value="{{ category.console_name }}">{{ category.console_name }}</option>
+                        {% endfor %}
+                    </select>
+
                 <label for="category_name">Choose Game Console</label>
             <br>
             <br>
