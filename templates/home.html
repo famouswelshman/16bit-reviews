@@ -2,12 +2,8 @@
 {% block content %}
 
 <div class="row">
-    {% for task in tasks %}
-       <div class="col-4">
-           <<< card code here
-       </div>
-    {% endfor %}
- </div>
+    {% include "card.html" %}
+</div>
  
 {% endblock %}
 
