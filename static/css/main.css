@@ -77,10 +77,6 @@
   display: flex;
 }
 
-.col-md-4 {
-  margin-bottom: 50px;
-}
-
 .submit-register {
   text-align: center;
 }
@@ -131,7 +127,7 @@ padding: .5rem;
 }
 
 .col .col-lg-3 .col-md-6 .col-sm-12 {
-  background-color: chocolate;
+  background-color: teal;
 }
 
 .btn-outline-primary {
@@ -140,7 +136,7 @@ padding: .5rem;
 
 .create-container {
   text-align: center;
-  background-image: url("../images/block_background.png");
+  background-color: corla;
   text-align: center;
 }
 
@@ -149,16 +145,16 @@ padding: .5rem;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 15px;
-  background-color: coral;
+  background-color: #a0e3eb;
+  border-style: solid;
 }
 
 .col {
-  border-style: dotted;
+
 }
 
 .row {
-  border-style: dotted;
-  
+ 
 }
 *,
 *::before,
