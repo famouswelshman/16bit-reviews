@@ -111,6 +111,7 @@ background-color: green;
   
 .card-container {
   padding: 15px, 15px, 15px, 15px;
+  text-align: center;
 }
 
 &amp;amp;nbsp;
@@ -139,12 +140,15 @@ padding: .5rem;
 
 .create-container {
   text-align: center;
-  border-style: dotted;
+  background-image: url("../images/block_background.png");
+  text-align: center;
 }
 
 .create-container .row {
   text-align: center;
-  border-style: dotted;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
   background-color: coral;
 }
 
