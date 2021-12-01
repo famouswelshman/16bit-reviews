@@ -152,6 +152,14 @@ padding: .5rem;
   background-color: coral;
 }
 
+.col {
+  border-style: dotted;
+}
+
+.row {
+  border-style: dotted;
+  
+}
 *,
 *::before,
 *::after {

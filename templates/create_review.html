@@ -1,21 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 
-  
+<form class="col" method="POST" action="{{ url_for('create_review') }}">
 <div class="create-container">
   <h1>Add Your Review</h1>
   <!----- GAME NAME INPUT ---->
   <div class="row">
     <div class="col">
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Game Title</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <label for="category_name" class="form-label">Game Title</label>
+        <input type="text" class="validate" id="console_name" aria-describedby="emailHelp" required>
         <div id="emailHelp" class="form-text">Enter the name of the game...</div>
       </div>
     </div>
 
   <!------ review TITLE ------------->
-    <div class="col">
+    <div class="col s12">
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Review Title</label>
         <input type="password" class="form-control" id="exampleInputPassword1">
@@ -26,30 +26,36 @@
   <!----------   CONSOLE SELECTOR DROPDOWN------->
     <div class="col">
       Select a console
-      <select class="form-select" aria-label="Default select example">
+      <select id="console_name" name="console_name" class="validate" aria-label="Default select example" required>
         <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+        <option value="" disabled selected>Choose Console</option>
+      {% for category in categories %}
+        <option value="{{ category.console_name }}">{{ category.console_name }}</option>
+      {% endfor %}
       </select>
-        <br>
-        <br>
+      <label for="category_name">Choose Game Console</label> 
 
-    <!---- REVIEW DETAILS INPUT ----->
-        <textarea class="validate" id="review_input" name="review_input" minlength="15" maxlength="200" rows="15" style="width: 700px" required></textarea>
-        <label for="review_input">Your Review</label>
+
+  <!---- REVIEW DETAILS INPUT ----->
+      <label for="review_input">Your Review</label>
+      <textarea class="validate" id="review_input" name="review_input" minlength="15" maxlength="200" rows="15" style="width: 700px" required></textarea>
+  
       </div>
+      <div class="row">
+        <div class="col">
+          Column 1
+        </div>
+        <div class="col">
+          Column 2
+        </div>
       </div>
+    </div>
     </div>
   </div>
 </div>
 
 
-<!---- REVIEW DETAILS INPUT ----->
-<textarea class="validate" id="review_input" name="review_input" minlength="15" maxlength="200" rows="10" style="width: 700px" required></textarea>
-        <label for="review_input">Your Review</label>
-      </div>
-<form>
+
   
   
   <div class="mb-3 form-check">
@@ -58,6 +64,9 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+
+
 
 
 
