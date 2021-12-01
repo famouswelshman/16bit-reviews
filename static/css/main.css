@@ -110,7 +110,7 @@ background-color: green;
 }
   
 .card-container {
-  background-color: blue;
+  padding: 15px, 15px, 15px, 15px;
 }
 
 &amp;amp;nbsp;
@@ -131,7 +131,6 @@ padding: .5rem;
 
 .col .col-lg-3 .col-md-6 .col-sm-12 {
   background-color: chocolate;
-  margin-bottom: 15px;
 }
 
 .btn-outline-primary {
