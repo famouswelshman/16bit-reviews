@@ -1,10 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="main-container">
-   
-{% include "card.html" %}    
-</div>
+<div class="row">
+    {% for task in tasks %}
+       <div class="col-4">
+           <<< card code here
+       </div>
+    {% endfor %}
+ </div>
+ 
 {% endblock %}
 
   
