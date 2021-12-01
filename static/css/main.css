@@ -150,8 +150,15 @@ padding: .5rem;
   
 }
 
-.row {
- 
+.row-profile {
+  border-style: solid;
+  text-align: center;
+}
+
+.row-profile .row {
+  border-style: solid;
+  text-align: center;
+  padding: 300px;
 }
 *,
 *::before,
