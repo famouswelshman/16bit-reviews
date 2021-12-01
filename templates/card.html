@@ -5,11 +5,11 @@
     <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{ task.review_title }}</h5>
-        <p class="card-text">{{ task.review_input }}</p>
+        <p class="card-text">{{ task.game_name }}</p>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">{{ task.console_name }}</li>
-        <li class="list-group-item">{{ task.game_name }}</li>
+        <li class="list-group-item">{{ task.review_input }}</li>
         <li class="list-group-item">{{ task.rating }}</li>
       </ul>
       <div class="card-body">
@@ -17,4 +17,7 @@
       </div>
   </div>
 </div>
+
 {% endfor %}
+
+

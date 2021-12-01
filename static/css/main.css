@@ -71,6 +71,7 @@
 }
 
 .hero img {
+  padding: 25px;
   width: 55%;
   height: auto;
   display: flex;
@@ -101,17 +102,17 @@
 }
 
 .cards {
- 
 display: grid;
-   
 grid-template-columns: repeat(3, 1fr);
-   
 grid-auto-rows: auto;
-   
 grid-gap: 1rem;
-   
+background-color: green;
 }
-   
+  
+.card-container {
+  background-color: blue;
+}
+
 &amp;amp;nbsp;
    
 .card {
@@ -128,9 +129,15 @@ padding: .5rem;
   text-align: center;
 }
 
+.col .col-lg-3 .col-md-6 .col-sm-12 {
+  background-color: chocolate;
+  margin-bottom: 15px;
+}
+
 .btn-outline-primary {
   width: 55%;
 }
+
 *,
 *::before,
 *::after {

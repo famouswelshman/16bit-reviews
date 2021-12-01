@@ -23,7 +23,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light text-shadow sticky-top">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" img src="https://github.com/famouswelshman/reviews-16bit/blob/main/templates/assets/images/Logo.png">Logo goes here</a>
+            <a class="navbar-brand" img src="">Logo goes here</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('get_tasks') }}">Home</a></li>
                     {% if session.user %}
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('create_review') }}">Creat a review</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('create_review') }}">Create a review</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!">Manage your reviews</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Log Out</a></li>
@@ -61,7 +61,7 @@
     </nav>
     <!-- Header-->
     <div class="masthead">
-    <header class="masthead" style="background-image: url('https://ak.picdn.net/shutterstock/videos/32712703/thumb/1.jpg?ip=x480')">
+    <header class="masthead" style="background-image: url('https://media.istockphoto.com/vectors/pixel-art-seamless-background-with-sky-and-ground-vector-id910093668?k=20&m=910093668&s=612x612&w=0&h=D_uvSsvsu3v8uhhDMUJNNfO_Ef1Cbsa7HssT3HmL_7I=')">
             <div class="hero">
                 <img src="static/images/Logo.png" alt="Logo">
                 </div>  

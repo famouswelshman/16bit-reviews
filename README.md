@@ -115,6 +115,7 @@ Getting the review cards to show up in sequenc and semetrically on the home page
 ## Heroku
 
 # Media Credits
+* www.16bitgladiators.com - Use of art for custom Logo created with Photoshop
 
 # Other Credits
 StartBootstrap - E-Commerce template downloaded and customozed for project
