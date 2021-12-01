@@ -117,10 +117,22 @@ padding: .5rem;
    
 }
 
+.card-body {
+  text-align: center;
+}
+
+.btn-outline-primary {
+  width: 55%;
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.hero {
+  width: 50px;
+  height: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
