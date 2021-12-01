@@ -137,6 +137,16 @@ padding: .5rem;
   width: 55%;
 }
 
+.create-container {
+  text-align: center;
+  border-style: dotted;
+}
+
+.create-container .row {
+  text-align: center;
+  border-style: dotted;
+}
+
 *,
 *::before,
 *::after {
