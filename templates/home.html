@@ -7,7 +7,7 @@
     
     <div class="col col-lg-3 col-md-6 col-sm-12">
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="{{ task.img_url }}" class="card-img-top" alt="game picture">
           <div class="card-body">
             <h5 class="card-title">{{ task.review_title }}</h5>
             <p class="card-text">{{ task.game_name }}</p>
@@ -19,6 +19,7 @@
           </ul>
           <div class="card-body">
             <button type="button" class="btn btn-outline-primary">Read Review</button>
+            <input class="btn btn-primary" type="submit" value="Edit">
           </div>
       </div>
     </div>

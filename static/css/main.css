@@ -72,7 +72,7 @@
 
 .hero img {
   padding: 25px;
-  width: 55%;
+  width: 45%;
   height: auto;
   display: flex;
 }
@@ -168,6 +168,9 @@ padding: .5rem;
   color: whitesmoke;
 }
 
+.flash-message {
+  color: whitesmoke;
+}
 *,
 *::before,
 *::after {

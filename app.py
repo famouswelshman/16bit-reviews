@@ -106,17 +106,22 @@ def create_review():
             "game_name": request.form.get("game_name"),
             "review_title": request.form.get("review_title"),
             "review_input": request.form.get("review_input"),
+            "img_url": request.form.get("img_url"),
             "created_by": session["user"]
         }
-        mongo.db.tasks.insert_one(review)
+        mongo.db.review.insert_one(task)
         flash("Review successfully created")
         return redirect(url_for("get_tasks"))
         
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("create_review.html", categories=categories)
 
+@app.route("/edit_task/<task_id>", methods=["GET", "POST"])
+def edit_task(task_id):
+    task = mongo.db.tasks.find_one({"_id: ObjectId(task_id)})
 
-
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_review.html", task=task, categories=categories)
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
