@@ -116,19 +116,11 @@ def create_review():
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("create_review.html", categories=categories)
 
-# Edit review
-@app.route("/edit_task/<task_id>", methods=["GET", "POST"])
-def edit_task(task_id):
-    task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
-
-    categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_review.html", task=task, categories=categories)
-
-
-
-
-
-
+# Open selected review
+@app.route("/open_review/<reviews_id>", methods=["GET", "POST"])
+def open_review(reviews_id):
+    review = mongo.db.reviews.find().sort({"_id": ObjectId(_id)})
+    return render_template("edit_review.html", reviews=reviews)
 
 
 
