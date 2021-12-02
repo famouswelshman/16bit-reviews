@@ -171,6 +171,15 @@ padding: .5rem;
 .flash-message {
   color: whitesmoke;
 }
+
+.login-container {
+  color: whitesmoke;
+}
+
+.register-container {
+  color: whitesmoke;
+}
+
 *,
 *::before,
 *::after {

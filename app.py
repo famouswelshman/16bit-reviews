@@ -21,9 +21,9 @@ mongo = PyMongo(app)
 
 @app.route("/")
 @app.route("/home")
-def get_tasks():
-    tasks = mongo.db.tasks.find()
-    return render_template("home.html", tasks=tasks)
+def get_reviews():
+    reviews = mongo.db.reviews.find()
+    return render_template("home.html", reviews=reviews)
 
 # REGISTRATION 
 @app.route("/register", methods=["GET", "POST"])
@@ -109,19 +109,33 @@ def create_review():
             "img_url": request.form.get("img_url"),
             "created_by": session["user"]
         }
-        mongo.db.review.insert_one(task)
-        flash("Review successfully created")
-        return redirect(url_for("get_tasks"))
+        mongo.db.reviews.insert_one(review)
+        flash("Review Successfully Added")
+        return redirect(url_for("get_reviews"))
         
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("create_review.html", categories=categories)
 
+# Edit review
 @app.route("/edit_task/<task_id>", methods=["GET", "POST"])
 def edit_task(task_id):
-    task = mongo.db.tasks.find_one({"_id: ObjectId(task_id)})
+    task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_review.html", task=task, categories=categories)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
