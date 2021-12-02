@@ -1,115 +1,55 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form class="col" method="POST" action="{{ url_for('create_review') }}">
-<div class="create-container">
-  <h1>Add Your Review</h1>
 
-  <!----- GAME NAME INPUT ---->
-  <div class="row">
-    <div class="col">
-      <div class="mb-3">
-        <label for="category_name" class="validate">Game Title</label>
-        <input type="text" class="validate" id="console_name" aria-describedby="emailHelp" required>
-        <div id="" class="form-text">Enter the name of the game...</div>
-      </div>
+  <div class="container-review">
+    <div class="row">
+        <h2>Add Your Review</h2>
     </div>
-
-  <!------ review TITLE ------------->
-    <div class="col">
-      <div class="mb-3">
-        <label for="review_title" class="validate">Review Title</label>
-        <input type="text" class="validate" id="review_title">
-        <div id="emailHelp" class="form-text">Enter a title for your review...</div>
-      </div>
-    </div>
-
-    
-  <!----------   CONSOLE SELECTOR DROPDOWN------->
-    <div class="col">
-      <select id="console_name" name="console_name" class="validate" aria-label="Default select example" required>
-        <option selected>Open this select menu</option>
-        <option value="" disabled selected>Console Selection</option>
-      {% for category in categories %}
-        <option value="{{ category.console_name }}">{{ category.console_name }}</option>
-      {% endfor %}
-      </select>
-    </div>
-  </div>
-
-
-  <!---- REVIEW DETAILS INPUT ----->
-      <label for="review_input">Your Review</label>
-      <textarea class="validate" id="review_input" name="review_input" minlength="15" maxlength="200" rows="15" style="width: 100%" required></textarea>
-  </div>
+<div class="row">
+  <form class="col s12" method="POST" action="{{ url_for('create_review') }}">
+<!----------   CONSOLE SELECTOR DROPDOWN------->
+    <div class="row">
+        <div class="input-field col s12">
+            <select id="console_name" name="console_name" class="validate" required>
+                <option value="" disabled selected>Choose Category</option>
+                {% for category in categories %}
+                    <option value="{{ category.console_name }}">{{ category.console_name }}</option>
+                {% endfor %}
+            </select>
+        <label for="category_name">Choose Game Console</label>
 </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+<br>
+<br>
+<!----- GAME NAME INPUT ---->
+ <div class="input-group mb-3">
+     <input type="text" class="form-control" id="game_name" name="game_name" placeholder="Game Name" aria-label="game_name" aria-describedby="basic-addon1" required>
+   </div>
+<!------ review TITLE -------------> 
+   <div class="input-group mb-10">
+     <input type="text" class="form-control" id="review_title" name="review_title" placeholder="Review Title" aria-label="review_title" aria-describedby="basic-addon2" required>
+   </div>
+<!------------- Image Upload ----------->  
+   <label for="basic-url" class="form-label">---------------</label>
+   <div class="input-group mb-3">
+     <input type="text" class="form-control" id="basic-url" placeholder="Image URL (copy image address link and paste here" aria-describedby="basic-addon3">
+   </div>
+   
+<!---- REVIEW DETAILS INPUT ----->
+   <div class="input-group">
+     <span class="input-group-text">Review Details</span>
+     <textarea class="form-control" id="review_input" name="review_input" rows="9" aria-label="With textarea" minlength="15" maxlength="250" required></textarea>
+   </div>
+   <br>
+   <br>
+   <div class="buttons-container">
+     <br>
+     <br>
+    <input class="btn btn-primary" type="submit" value="Submit Review">
+   </div>
+</div>
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-    <h3 class="light-blue-text text-darken-4 center align">Add Review</h3>
-  <!----------   CONSOLE SELECTOR DROPDOWN------->
-    <div class="row card-panel grey lighten-5">
-        <form class="col s12" method="POST" action="{{ url_for('create_review') }}">
-            <div class="row">
-                <div class="input-field col s12">
-                    <select id="console_name" name="console_name" class="validate" required>
-                        <option value="" disabled selected>Choose Category</option>
-                        {% for category in categories %}
-                            <option value="{{ category.console_name }}">{{ category.console_name }}</option>
-                        {% endfor %}
-                    </select>
-
-                <label for="category_name">Choose Game Console</label>
-            <br>
-            <br>
-          <br>
-          <br>
-          <br>
-
-        <!----- GAME NAME INPUT ---->
-      <div class="mb-3">
-        <input type="text" class="validate" id="game_name" name="game_name" required>
-        <label for="game_name">Game Name</label>
-      </div>
-
-      <div class="input-field col s12 m6">
-        <input id="image_url" type="url" name="image_url" autocomplete="off">
-        <label for="image_url">Image URL</label>
-        <span class="helper-text">Enter full valid URL to image, or leave blank if no image available</span>
-    </div>
-      
-      <!------ review TITLE ------------->
-      <div class="mb-3">
-        <input type="text" class="validate" id="review_title" name="review_title" required>
-        <label for="review_title">Add Review Title</label>
-      </div>
-
-        <!---- REVIEW DETAILS INPUT ----->
-        <textarea class="validate" id="review_input" name="review_input" minlength="15" maxlength="200" rows="10" style="width: 700px" required></textarea>
-        <label for="review_input">Your Review</label>
-      </div>
-      <br>
-
-      <!---- SUBMIT THIS INFO TO DATABASE BUTTON -->
-      <input class="btn btn-primary" type="submit" value="Submit">
-      <br>
-
-    </form>
-
-
-
-
+<br>
+<br>
 
 {% endblock %}

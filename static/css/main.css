@@ -87,8 +87,8 @@
 }
 
 .masthead {
-  height: 28%;
-  width: auto;
+  height: 50%;
+  width: 100%;
 }
 
 .main-container {
@@ -144,10 +144,13 @@ padding: .5rem;
   padding-top: 15px;
   background-color: #a0e3eb;
   border-style: solid;
+  border-radius: 25px;
 }
 
-.col {
-  
+.profile-container {
+  text-align: center;
+  background-color: cadetblue;
+  color: whitesmoke;
 }
 
 .row-profile {
@@ -160,6 +163,11 @@ padding: .5rem;
   text-align: center;
   padding: 300px;
 }
+
+.container-review {
+  color: whitesmoke;
+}
+
 *,
 *::before,
 *::after {

@@ -105,7 +105,7 @@ Schema
 
 # Summary of Testing
 Getting the review cards to show up in sequenc and semetrically on the home page.
-
+Fixing the review form together to be responsive and capture the data with (required), ensuring the correct database fields where added to transfer data to MongoDB
 
 # Deployment
 
