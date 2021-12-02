@@ -120,7 +120,7 @@ def create_review():
 @app.route("/open_review/<reviews_id>")
 def open_review(reviews_id):
     review = mongo.db.reviews.find_one({"_id": ObjectId(reviews_id)})
-    return render_template("edit_review.html", review=review)
+    return render_template("open_review.html", review=review)
 
 
 

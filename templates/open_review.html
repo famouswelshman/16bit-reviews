@@ -3,7 +3,7 @@
 
 <div class="card-container">
     <div class="row">
-    {% for review in reviews %}
+
     
     <div class="col col-lg-3 col-md-6 col-sm-12">
       <div class="card">
@@ -18,14 +18,13 @@
             <li class="list-group-item">{{ review.rating }}</li>
           </ul>
           <div class="card-body">
-            <button type="button" class="btn btn-outline-primary">Read Review</button>
-            <a href="{{ url_for('open_review', reviews_id=review._id) }}">CLICK</a>
-            <input class="btn btn-primary" type="submit" value="Edit">
+            <button type="button" class="btn btn-outline-primary">Read Review
+            </button>
+      
           </div>
       </div>
     </div>
     
-    {% endfor %}
 
 
  
