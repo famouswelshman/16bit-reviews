@@ -98,13 +98,7 @@ The home page would display multiple reviews and the responsive element of the p
 # Database Schema (MongoDB)
 
 ![MongoDB_schematic](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/MongoDB_Schematic.jpg)
-User Collection
-Schema
 
-
-
-Games
-Schema
 
 # Testing
 

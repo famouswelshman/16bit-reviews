@@ -117,7 +117,7 @@ def create_review():
     return render_template("create_review.html", categories=categories)
 
 # Open selected review
-@app.route("/open_review/<reviews_id>")
+@app.route("/open_review/<reviews_id>", methods=["GET", "POST"])
 def open_review(reviews_id):
     review = mongo.db.reviews.find_one({"_id": ObjectId(reviews_id)})
     return render_template("open_review.html", review=review)
