@@ -85,12 +85,14 @@ The key here was to present the review data in a symetrical fashion and allow th
 
 The home page would display multiple reviews and the responsive element of the page meant that the amount of content shows would be reduced based on screen media sizes.
 
-# Desktop Open Review Page template
+## Desktop Open Review Page template
 ![wireframe5](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/desktop_review_template.png)
 
-# Medium Media Open Review Page Template
+## Medium Media Open Review Page Template
 ![wireframe6](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/medium_review_template.png)
 
+## Mobile Open Review Page Template
+![wireframe7]()
 
 
 # Database Schema (MongoDB)
