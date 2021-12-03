@@ -97,6 +97,7 @@ The home page would display multiple reviews and the responsive element of the p
 
 # Database Schema (MongoDB)
 
+![MongoDB_schematic]()
 User Collection
 Schema
 
