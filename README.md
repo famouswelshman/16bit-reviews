@@ -105,7 +105,8 @@ Schema
 
 # Summary of Testing
 Getting the review cards to show up in sequenc and semetrically on the home page.
-https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/.jpg
+
+https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/card_template.jpg
 
 Fixing the review form together to be responsive and capture the data with (required), ensuring the correct database fields where added to transfer data to MongoDB
 
