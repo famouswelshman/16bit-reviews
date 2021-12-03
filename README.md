@@ -109,6 +109,8 @@ Getting the review cards to show up in sequence and semetrically on the home pag
 in a structured fashion on screen and be responsive to all media screen sizes.
 [![name](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/card_template.jpg)]
 
+
+[!image input]()]
 Fixing the review form together to be responsive and capture the data with (required), ensuring the correct database fields where added to transfer data to MongoDB.
 
 
