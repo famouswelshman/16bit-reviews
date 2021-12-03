@@ -104,18 +104,38 @@ Schema
 ## Flask (Python)
 
 # Summary of Testing
-Getting the review cards to show up in sequenc and semetrically on the home page.
-
+# Project Challenges
+Getting the review cards to show up in sequence and semetrically on the home page required selecting use of Bootstrap grid code to enable the content of each review to show
+in a structured fashion on screen and be responsive to all media screen sizes.
 [![name](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/card_template.jpg)]
 
-Fixing the review form together to be responsive and capture the data with (required), ensuring the correct database fields where added to transfer data to MongoDB
+Fixing the review form together to be responsive and capture the data with (required), ensuring the correct database fields where added to transfer data to MongoDB.
+
+
+
 
 # Deployment
 
 ## Github
+https://github.com/
 
+I originally had a Github account setup for previous milestone submissions therefore for this project the same setup applied albeit this time, since the 
+project code is driven by python then Github would serve as a virtual platform to host the files and have the files be accesible for marking.
+Since this project is driveN by Python(Flask) then Github would not be able to host this as a complete, functioning application and was therefore linked to Heroku.
+
+# Gitpod
+
+My project was created using the Gitpod IDE. All folders and files were created and saved to the repository and the workspace was accessed daily to edit, create and delete 
+the neccessary content. Since this projects content required numerous dependencies, it was recommended that we use the Code Institute full template since this came with 
+all the neccessary pre-installed tools to enable use of the various programs. Project created included regular commits to show detail of its construction. Final project accessible via Github, main branch set to public.
 
 ## Heroku
+https://id.heroku.com/login
+
+In order to run this project application, an account was required to be setup via Heroku. Since Heroku
+
+## MongoDB
+
 
 # Media Credits
 * www.16bitgladiators.com - Use of art for custom Logo created with Photoshop
