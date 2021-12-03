@@ -132,9 +132,16 @@ all the neccessary pre-installed tools to enable use of the various programs. Pr
 ## Heroku
 https://id.heroku.com/login
 
-In order to run this project application, an account was required to be setup via Heroku. Since Heroku
+In order to run this project application, an account was required to be setup via Heroku. Deployment setup required which required connection to the Github repository and then
+creating the app in order to view. In order for the data to be accessed from MongoDB, we had to setup the connection details via the Confi Vars input fields where the DB name and secret key will be stored. This process of linking both Github and MongoDB was shown via the Task Manager mini project during the learning modules therefore the process
+of it's setup was relatively straightforward and differs slightly in that unique database name and connection details would be different.
 
 ## MongoDB
+https://account.mongodb.com/
+
+In order to meet the project requirements, the use of MongoDB as a non-relational database was required. Here is where the data is stored as a result of the python app submit functions running on the application. In turn, selective data is then returned to the application to be read, edited and deleted as per the user who is signed into the application. The connection between the project files and the DB is maintained via the env.py file and this is classed as hidden and does not get uploaded to Github for security purposes.
+
+
 
 
 # Media Credits
