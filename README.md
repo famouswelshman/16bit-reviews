@@ -89,7 +89,7 @@ The home page would display multiple reviews and the responsive element of the p
 ![wireframe5](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/desktop_review_template.png)
 
 # Medium Media Open Review Page Template
-![wireframe6]()
+![wireframe6](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/medium_review_template.png)
 
 
 
