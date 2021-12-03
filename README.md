@@ -92,7 +92,7 @@ The home page would display multiple reviews and the responsive element of the p
 ![wireframe6](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/medium_review_template.png)
 
 ## Mobile Open Review Page Template
-![wireframe7]()
+![wireframe7](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/mobile_review_template.png)
 
 
 # Database Schema (MongoDB)
