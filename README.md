@@ -78,7 +78,21 @@ Add review form facility where users can added their own data and submit to be d
 # Page Layout, Typography and Color Scheme
 
 # MS3 Wireframes ---- Using Balsamic
-![wireframe1](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/desktop_review_template.png)]
+So the early design ideas were centered around a sort of Netflix style web application, displaying multiple review content on the home page and the allowing the user to 
+search by key words for review data relevant to the search and then being able to open that review detail in full on a seperate template on page. The overall design had to be quite bold and vibrant since the subject was retro video games. I designed the project specifically to cover the 16 bit genre of gaming since this would limit the amount of content submitted and this was a personal choice of mine since I have a keen interest in retro games as opposed to more modern day gaming consoles.
+
+The key here was to present the review data in a symetrical fashion and allow the user to scroll through the page either before or after search. I did also consider 'pagination' of the content since the overall content submitted could be quite significant.
+
+The home page would display multiple reviews and the responsive element of the page meant that the amount of content shows would be reduced based on screen media sizes.
+
+# Desktop Open Review Page template
+![wireframe5](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/desktop_review_template.png)
+
+# Medium Media Open Review Page Template
+![wireframe6]()
+
+
+
 # Database Schema (MongoDB)
 
 User Collection
