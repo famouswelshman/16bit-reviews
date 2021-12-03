@@ -107,12 +107,12 @@ Schema
 # Project Challenges
 Getting the review cards to show up in sequence and semetrically on the home page required selecting use of Bootstrap grid code to enable the content of each review to show
 in a structured fashion on screen and be responsive to all media screen sizes.
-[![name](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/card_template.jpg)]
+![name](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/card_template.jpg)]
 
 
-[![img input](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/image_input.jpg)]
+![img input](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/image_input.jpg)]
 Since I wanted to include a URL image address input in the 'Create_review' the image link submitted would then need to be visible within the review cards. In order to achieve this, the correct use of {{}} and its respective link was used - "img_url": request.form.get("img_url"). This maintained a connection to the database and the specific img_url category in the reviews collection in order to return the img_url data.
-[![img_after](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/image_input_after.JPG)]
+![img_after](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/image_input_after.JPG)]
 
 Fixing the review form together to be responsive and capture the data with (required), ensuring the correct database fields where added to transfer data to MongoDB.
 
