@@ -54,14 +54,15 @@ Materialize (Pre built page layout)
 * The user wants to be able to view other user reviews.
 * User wants to be directed to where they can buy the game.
 ## Features:
-* User friendly, responsive site that loads quickly and is intuitive.
-* Simple Navbar that is also collapsable for smaller media.
-* Search and filter feature.
-* Users can add, edit or delete their video games data and review.
+* User friendly, responsive site that loads quickly and is intuitive. Immediately displays the content and shows the purpose of this application.
+* Simple Navbar to quickly navigate to the relevant page and that is also collapsable for smaller media.
+* Search and filter feature to display relevant reviews based on category search items.
+* Users can add, edit or delete their own reviews and can view other users reviews but cannot edit or delete.
 ## Structure:
-* Each web page will display Navbar.
-* Layout will display the games in a semetrical display.
-* Game and review data will load up on each page.
+* Each web page will display consistent Navbar and footer along with hero image.
+* Layout will display the review data in a semetrical display allowing users to click and open upon command. Search function will allow user to quickly group 
+reviews relevant to their search word.
+* Review data will load up on seperate page and providing they are the user logged in will allow edit and delete functions.
 
 
 # Website UX
@@ -69,7 +70,8 @@ Materialize (Pre built page layout)
 
 
 # Website features
-
+Search function bar allowing user logged in or not to view data according to their specific search criteria.
+Add review form facility where users can added their own data and submit to be displayed on the review home page.
 
 # Future Features
 
@@ -104,6 +106,8 @@ Schema
 ## Flask (Python)
 
 # Summary of Testing
+Calling the @app.route (open_review) proved to be a big task since the focus for an individual review was based on the Object Id applicable to that specific review detail.
+
 # Project Challenges
 Getting the review cards to show up in sequence and semetrically on the home page required selecting use of Bootstrap grid code to enable the content of each review to show in a structured fashion on screen and be responsive to all media screen sizes.
 &nbsp;
