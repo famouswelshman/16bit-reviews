@@ -105,9 +105,8 @@ Schema
 
 # Summary of Testing
 # Project Challenges
-Getting the review cards to show up in sequence and semetrically on the home page required selecting use of Bootstrap grid code to enable the content of each review to show
-in a structured fashion on screen and be responsive to all media screen sizes.
-![name](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/card_template.jpg)]
+Getting the review cards to show up in sequence and semetrically on the home page required selecting use of Bootstrap grid code to enable the content of each review to show in a structured fashion on screen and be responsive to all media screen sizes.
+![name](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/card_template.jpg img align="left")]
 
 
 ![img input](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/image_input.jpg)]
