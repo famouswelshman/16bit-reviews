@@ -16,7 +16,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
+placeholder_image = 'https://us.123rf.com/450wm/pavelstasevich/pavelstasevich1811/pavelstasevich181101028/112815904-no-image-available-icon-flat-vector-illustration.jpg?ver=6'
 
 
 @app.route("/")
@@ -123,9 +123,6 @@ def open_review(reviews_id):
     return render_template("open_review.html", review=review)
 
 
-# search for review item
-@app.route("/search")
-def search = 
 
 
 
