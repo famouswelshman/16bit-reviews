@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
+<form class="col s12" method="POST" action="{{ url_for('create_review') }}">
+<div class="search-container>">
+      <div class="input-group mb-3">
+          <input type="text" class="form-control form-control-lg" placeholder="Search Reviews">
+          <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>
+      </div>
+  </form>
+</div>
+
+
+
+
 <div class="card-container">
     <div class="row">
     {% for review in reviews %}
@@ -16,6 +28,7 @@
             <li class="list-group-item">{{ review.console_name }}</li>
             <li class="list-group-item">{{ review.review_input }}</li>
             <li class="list-group-item">{{ review.rating }}</li>
+            <li class="list-group-item"><p>Created by:</p>{{ review.created_by }}</li>
           </ul>
           <div class="card-body">
             <a href="{{ url_for('open_review', reviews_id=review._id) }}" class="btn btn-outline-primary">

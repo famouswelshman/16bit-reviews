@@ -123,7 +123,9 @@ def open_review(reviews_id):
     return render_template("open_review.html", review=review)
 
 
-
+# search for review item
+@app.route("/search")
+def search = 
 
 
 
