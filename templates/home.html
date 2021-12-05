@@ -2,45 +2,45 @@
 {% block content %}
 
 <form class="col s12" method="POST" action="">
-<div class="search-container>">
-      <div class="input-group mb-3">
-          <input type="text" class="form-control form-control-lg" placeholder="Search Reviews">
-          <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>
-      </div>
-  </form>
+  <div class="search-container>">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control form-control-lg" placeholder="Search Reviews">
+      <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>
+    </div>
+</form>
 </div>
 
 
 
 
 <div class="card-container">
-    <div class="row">
+  <div class="row">
     {% for review in reviews %}
-    
+
     <div class="col col-lg-3 col-md-4 col-sm-12">
       <div class="card">
         <img src="{{ review.img_url }}" class="card-img-top" alt="game picture">
-          <div class="card-body">
-            <h5 class="card-title">{{ review.review_title }}</h5>
-            <p class="card-text">{{ review.game_name }}</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">{{ review.console_name }}</li>
-            <li class="list-group-item">{{ review.review_input }}</li>
-            <li class="list-group-item">{{ review.rating }}</li>
-            <li class="list-group-item"><p>Created by:</p>{{ review.created_by }}</li>
-          </ul>
-          <div class="card-body">
-            <a href="{{ url_for('open_review', reviews_id=review._id) }}" class="btn btn-outline-primary">
+        <div class="card-body">
+          <h5 class="card-title">{{ review.review_title }}</h5>
+          <p class="card-text">{{ review.game_name }}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{ review.console_name }}</li>
+          <li class="list-group-item">{{ review.review_input }}</li>
+          <li class="list-group-item">{{ review.rating }}</li>
+          <li class="list-group-item">
+            <p>Created by:</p>{{ review.created_by }}
+          </li>
+        </ul>
+        <div class="card-body">
+          <a href="{{ url_for('open_review', reviews_id=review._id) }}" class="btn btn-outline-primary">
             <button type="button">Read Review</button></a>
-          </div>
+        </div>
       </div>
     </div>
-    
+
     {% endfor %}
 
 
- 
-{% endblock %}
 
-  
+    {% endblock %}
