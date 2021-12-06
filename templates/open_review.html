@@ -1,27 +1,41 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="card-container">
-    <div class="row">
 
-    
-    <div class="col col-lg-3 col-md-6 col-sm-12">
-      <div class="card">
-        <img src="{{ review.img_url }}" class="card-img-top" alt="game picture">
-          <div class="card-body">
-            <h5 class="card-title">{{ review.review_title }}</h5>
-            <p class="card-text">{{ review.game_name }}</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">{{ review.console_name }}</li>
-            <li class="list-group-item">{{ review.review_input }}</li>
-            <li class="list-group-item">{{ review.rating }}</li>
-          </ul>
-          <div class="card-body">
-            <button type="button" class="btn btn-outline-primary">Read Review
-            </button>
-      
-          </div>
+
+    <!-------THIS IS THE MAIN REVIEW CONTENT----->
+    <div class="container-md">
+      <div class="col-6" style="color: whitesmoke;">
+        <h3 class="card-title">{{ review.review_title }}</h3>
       </div>
-    </div> 
-    {% endblock %}
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="{{ review.img_url }}" class="card-img-top" alt="game picture" width="auto" height="100%">
+          </div>
+          <div class="col-lg-6" style="color: white;" height: 500px;>
+            <h2 class="card-text">{{ review.game_name }}</ph2
+       
+              
+          
+         
+          <div class="container">
+            <h5 class="list-group-item">{{ review.review_input }}</h5>
+          </div>
+            <div class="col-lg-4">
+              <h5 class="list-group-item">{{ review.console_name }}</h5>
+            </div>
+          </div>
+          <br>
+          <br>
+          
+          <h6 class="container" style="color: whitesmoke;">Created by: Famouswelshman</h6>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        
+        
+      </div>
+      
+  </div>
+      {% endblock %}

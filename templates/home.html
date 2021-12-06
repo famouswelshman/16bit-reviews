@@ -1,14 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-----SEARCH FUNCTION------>
+
 <form class="col s12" method="POST" action="{{ url_for('search') }}">
   <div class="search-container>">
-    <div class="input-group mb-3">
-      <input type="text" name="query" id="query" class="form-control form-control-lg" placeholder="Search Reviews" required>
+    <div class="input-group mb-6">
+      <input type="text" name="query" id="query" class="form-control form-control-lg" placeholder="Search Reviews"
+        required>
       <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>
+      <a href="{{ url_for('get_reviews') }}">
+        <button type="button" class="btn btn-danger">Reset</button>
+      </a>
     </div>
+  </div>
 </form>
-</div>
+
 
 
 
@@ -38,9 +45,5 @@
         </div>
       </div>
     </div>
-
     {% endfor %}
-
-
-
     {% endblock %}
