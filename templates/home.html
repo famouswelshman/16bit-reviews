@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form class="col s12" method="POST" action="">
+<form class="col s12" method="POST" action="{{ url_for('search') }}">
   <div class="search-container>">
     <div class="input-group mb-3">
-      <input type="text" class="form-control form-control-lg" placeholder="Search Reviews">
+      <input type="text" name="query" id="query" class="form-control form-control-lg" placeholder="Search Reviews" required>
       <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>
     </div>
 </form>
