@@ -130,6 +130,12 @@ def search():
     return render_template("home.html", reviews=reviews)
 
 
+@app.route("/edit_review/<reviews_id>", methods=["GET", "POST"])
+def edit_review(reviews_id):
+    reviews = mongo.db.reviews.find_one({"_id": ObjectId(reviews_id)})
+
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_review.html", reviews=reviews)
 
 
 if __name__ == "__main__":

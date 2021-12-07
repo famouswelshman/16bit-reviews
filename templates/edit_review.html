@@ -4,7 +4,7 @@
 
 <div class="container-review">
   <div class="row">
-    <h2>Add Your Review</h2>
+    <h2>Edit Your Review</h2>
   </div>
   <div class="row">
     <form class="col s12" method="POST" action="{{ url_for('create_review') }}">
@@ -12,9 +12,13 @@
       <div class="row">
         <div class="input-field col s12">
           <select id="console_name" name="console_name" class="validate" required>
-            <option value="" disabled selected>Choose Category</option>
+            <option value="" disabled>Choose Category</option>
             {% for category in categories %}
-            <option value="{{ category.console_name }}">{{ category.console_name }}</option>
+                {% if category.category_name == category.console_name %}
+                  <option value="{{ category.console_name }}">{{ category.console_name }}</option>
+                {% else %}
+                  <option value="{{ category.console_name }}">{{ category.console_name }}</option>
+                {% endif %}
             {% endfor %}
           </select>
           <label for="category_name">Choose Game Console</label>
@@ -23,26 +27,26 @@
         <br>
         <!----- GAME NAME INPUT ---->
         <div class="input-group mb-3">
-          <input type="text" class="form-control" id="game_name" name="game_name" placeholder="Game Name"
-            aria-label="game_name" aria-describedby="basic-addon1" required>
+          <input type="text" class="form-control" id="game_name" malength="20" name="game_name" placeholder="Game Name"
+            aria-label="game_name" aria-describedby="basic-addon1" value="{{ reviews.game_name }}" required>
         </div>
         <!------ review TITLE ------------->
         <div class="input-group mb-10">
           <input type="text" class="form-control" id="review_title" name="review_title" placeholder="Review Title"
-            aria-label="review_title" aria-describedby="basic-addon2" required>
+            aria-label="review_title" aria-describedby="basic-addon2" value="{{ reviews.review_title }}" required>
         </div>
         <!------------- Image Upload ----------->
         <label for="basic-url" class="form-label">---------------</label>
         <div class="input-group mb-3">
           <input type="text" class="form-control" id="img_url" name="img_url"
-            placeholder="Image URL (copy image address link and paste here" aria-describedby="basic-addon3">
+            placeholder="Image URL (copy image address link and paste here" value="{{ reviews.img_url }}" aria-describedby="basic-addon3">
         </div>
 
         <!---- REVIEW DETAILS INPUT ----->
         <div class="input-group">
           <span class="input-group-text">Review Details</span>
           <textarea class="form-control" id="review_input" name="review_input" rows="9" aria-label="With textarea"
-            minlength="50" maxlength="1000" required></textarea>
+            minlength="50" maxlength="1000" required>{{ reviews.review_input }}</textarea>
         </div>
         <br>
         <br>
