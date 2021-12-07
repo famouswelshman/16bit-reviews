@@ -5,20 +5,22 @@
 
 <!-------THIS IS THE MAIN REVIEW CONTENT----->
 <div class="container-md" style="border: 2px solid grey;">
-  <div class="col-6" style="color: whitesmoke;">
+  <div class="col-12" style="color: whitesmoke;">
     <h3 class="card-title">{{ review.review_title }}</h3>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-6">
         <img src="{{ review.img_url }}" class="card-img-top" alt="game picture" width="auto" height="100%">
       </div>
-      <div class="col-lg-6" style="color: white;" height: 500px;>
-        <h2 class="card-text" style="border: 2px solid grey;">{{ review.game_name }}</h2>
-        <div class="container" style="opacity: 0.5;"></div>
-        <h6 class="list-group-item" style="border: 2px solid grey;">{{ review.review_input }}</h6>
-      </div>
 
+      <div class="col-lg-6" style="color: white;" height: 500px;>
+        <h2 class="card-text" style="border: 0.5px solid grey;">{{ review.game_name }}</h2>
+        <div class="col-md-12" style="border: 2px solid grey;">
+          <p class="review-info">
+            {{ review.review_input }}
+          </p>
+        </div>
       <div class="col-lg-4">
         <h5 class="list-group-item">{{ review.console_name }}</h5>
       </div>
@@ -26,6 +28,6 @@
     <h5>
       <p class="row" style="color: white;">Created by:<br>{{ review.created_by }}</p>
     </h5>
-  </div>
+ 
 
   {% endblock %}
