@@ -26,7 +26,7 @@ Megabit Reviews
 Retro Reviews
 
 ## Definition of the genre:
-16 bit (4th generation console games including: 
+16 bit (4th generation console games) including: 
 Mega Drive
 Super Nintendo
 Neo Geo
@@ -44,8 +44,8 @@ Additional libraries and external APIs
 * Javascript / Jquery
 
 ## Optional
-Bootstrap material design
-Materialize (Pre built page layout)
+* Bootstrap material design
+* Materialize (Pre built page layout)
 
 # User Stories:
 * Visitors can want to know more about the content of the site.
@@ -66,6 +66,14 @@ reviews relevant to their search word.
 
 
 # Website UX
+
+The idea was based on similar review based websites but for the purpose of reviewing a selective genre of video games, namely the 16bit era of gaming.
+Users can access the website and instantly view reviews set out on the home page. There is a search bar function that allows the user to quickly search for specific review details according to their requirements.
+
+The website is basic in it's design and layout but this adds to the simplistic theme of the site which is based on the 16bit game genre. Content is bold and bright and the website is easy to navigate.
+
+Users have the facility to create a login via the login page where a username and password are required for setup and to protect their details. This then allows registered users to to create their own review information and add it to the the application and/or edit or delete this information further.
+
 
 
 
