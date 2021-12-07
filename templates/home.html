@@ -37,7 +37,7 @@
           <div class="card-review-details">
             <li class="list-group-item" style="flex-wrap: wrap;">{{ review.review_input }}</li>
           </div>
-          <p class="cont" style="color: red;"><a href="{{ url_for('open_review', reviews_id=review._id) }}"></a>Continue reading....</p>
+          <p class="cont" style="color: red;"><a href="{{ url_for('open_review', review_id=review._id) }}"></a>Continue reading....</p>
           <li class="list-group-item">{{ review.rating }}</li>
           <li class="list-group-item">
             <b>Created by:</b>&nbsp{{ review.created_by }}
@@ -45,7 +45,7 @@
         </ul>
       </div>
         <div class="card-body">
-          <a href="{{ url_for('open_review', reviews_id=review._id) }}" class="btn btn-outline-primary" style="padding: 10px;">
+          <a href="{{ url_for('open_review', review_id=review._id) }}" class="btn btn-outline-primary" style="padding: 10px;">
             <button type="button">Read Review</button></a>
         </div>
       </div>

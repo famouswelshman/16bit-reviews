@@ -117,9 +117,9 @@ def create_review():
     return render_template("create_review.html", categories=categories)
 
 # Open selected review
-@app.route("/open_review/<reviews_id>", methods=["GET", "POST"])
-def open_review(reviews_id):
-    review = mongo.db.reviews.find_one({"_id": ObjectId(reviews_id)})
+@app.route("/open_review/<review_id>", methods=["GET"])
+def open_review(review_id):
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     return render_template("open_review.html", review=review)
 
 # Search reviews by name (text)
@@ -130,12 +130,12 @@ def search():
     return render_template("home.html", reviews=reviews)
 
 # Edit review
-@app.route("/edit_review/<reviews_id>", methods=["GET", "POST"])
+@app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(reviews_id):
-    reviews = mongo.db.review.find_one({"_id": ObjectId(reviews_id)})
+    review = mongo.db.review.find_one({"_id": ObjectId(review_id)})
 
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_review.html", reviews=reviews)
+    return render_template("edit_review.html", review=review, categories=categories)
 
 
 if __name__ == "__main__":

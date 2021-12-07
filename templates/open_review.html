@@ -2,7 +2,6 @@
 {% block content %}
 
 
-
 <!-------THIS IS THE MAIN REVIEW CONTENT----->
 <div class="container-md" style="border: 2px solid grey;">
   <div class="col-12" style="color: whitesmoke;">
@@ -31,7 +30,7 @@
 
     <div class="row justify-content-center">
      <div class="col-6">
-        <a href="" button type="button" class="btn btn-success">Edit</button></a>
+        <a href="{{ url_for('edit_review', review_id=review._id) }}" button type="button" class="btn btn-success">Edit</button></a>
       </div>
    
      
@@ -44,9 +43,5 @@
         
  
 
-       
-     
 
-
-      
-      {% endblock %}
+{% endblock %}
