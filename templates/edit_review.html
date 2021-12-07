@@ -28,18 +28,18 @@
         <!----- GAME NAME INPUT ---->
         <div class="input-group mb-3">
           <input type="text" class="form-control" id="game_name" malength="20" name="game_name" placeholder="Game Name"
-            aria-label="game_name" aria-describedby="basic-addon1" value="{{ reviews.game_name }}" required>
+            aria-label="game_name" aria-describedby="basic-addon1" value="{{ review.game_name }}" required>
         </div>
         <!------ review TITLE ------------->
         <div class="input-group mb-10">
           <input type="text" class="form-control" id="review_title" name="review_title" placeholder="Review Title"
-            aria-label="review_title" aria-describedby="basic-addon2" value="{{ reviews.review_title }}" required>
+            aria-label="review_title" aria-describedby="basic-addon2" value="{{ review.review_title }}" required>
         </div>
         <!------------- Image Upload ----------->
         <label for="basic-url" class="form-label">---------------</label>
         <div class="input-group mb-3">
           <input type="text" class="form-control" id="img_url" name="img_url"
-            placeholder="Image URL (copy image address link and paste here" value="{{ reviews.img_url }}" aria-describedby="basic-addon3">
+            placeholder="Image URL (copy image address link and paste here" value="{{ review.img_url }}" aria-describedby="basic-addon3">
         </div>
 
         <!---- REVIEW DETAILS INPUT ----->
@@ -47,7 +47,7 @@
           <span class="input-group-text">Review Details</span>
           <textarea class="form-control" id="review_input" name="review_input" rows="9" aria-label="With textarea"
             minlength="50" maxlength="1000" required>
-            {{- reviews.review_input -}}
+            {{- review.review_input -}}
           </textarea>
         </div>
         <br>

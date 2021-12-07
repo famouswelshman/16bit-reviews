@@ -131,8 +131,8 @@ def search():
 
 # Edit review
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
-def edit_review(reviews_id):
-    review = mongo.db.review.find_one({"_id": ObjectId(review_id)})
+def edit_review(review_id):
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_review.html", review=review, categories=categories)
