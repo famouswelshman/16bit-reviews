@@ -195,6 +195,14 @@ footer {
   bottom: 0;
 }
 
+.card-review-details {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
 *,
 *::before,
 *::after {

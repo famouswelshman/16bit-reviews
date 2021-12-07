@@ -30,15 +30,20 @@
         <div class="card-body">
           <h5 class="card-title"><i>"{{ review.review_title }}"</i></h5>
           <p class="card-text">{{ review.game_name }}</p>
-        </div>
+      
+
         <ul class="list-group list-group-flush">
           <li class="list-group-item">{{ review.console_name }}</li>
-          <li class="list-group-item" style="flex-wrap: wrap;">{{ review.review_input }}</li>
+          <div class="card-review-details">
+            <li class="list-group-item" style="flex-wrap: wrap;">{{ review.review_input }}</li>
+          </div>
+          <p class="cont" style="color: red;"><a href="{{ url_for('open_review', reviews_id=review._id) }}">Continue reading....</p></a>
           <li class="list-group-item">{{ review.rating }}</li>
           <li class="list-group-item">
             <b>Created by:</b>&nbsp{{ review.created_by }}
           </li>
         </ul>
+      </div>
         <div class="card-body">
           <a href="{{ url_for('open_review', reviews_id=review._id) }}" class="btn btn-outline-primary" style="padding: 10px;">
             <button type="button">Read Review</button></a>

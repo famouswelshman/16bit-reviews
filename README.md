@@ -15,6 +15,7 @@ A website application that allows users to view 16 bit console game details and 
 
 Retro game reviews
 16 bit game reviews
+To build a retro games review website application allowing users to add, edit and delete their own review content.
 
 ## Name Ideas:
 
@@ -53,11 +54,13 @@ Additional libraries and external APIs
 * Users want to register their details on the site to be able to add reviews and rate the game.
 * The user wants to be able to view other user reviews.
 * User wants to be directed to where they can buy the game.
+
 ## Features:
 * User friendly, responsive site that loads quickly and is intuitive. Immediately displays the content and shows the purpose of this application.
 * Simple Navbar to quickly navigate to the relevant page and that is also collapsable for smaller media.
 * Search and filter feature to display relevant reviews based on category search items.
 * Users can add, edit or delete their own reviews and can view other users reviews but cannot edit or delete.
+
 ## Structure:
 * Each web page will display consistent Navbar and footer along with hero image.
 * Layout will display the review data in a semetrical display allowing users to click and open upon command. Search function will allow user to quickly group 
@@ -66,7 +69,6 @@ reviews relevant to their search word.
 
 
 # Website UX
-
 The idea was based on similar review based websites but for the purpose of reviewing a selective genre of video games, namely the 16bit era of gaming.
 Users can access the website and instantly view reviews set out on the home page. There is a search bar function that allows the user to quickly search for specific review details according to their requirements.
 
@@ -82,6 +84,8 @@ Search function bar allowing user logged in or not to view data according to the
 Add review form facility where users can added their own data and submit to be displayed on the review home page.
 
 # Future Features
+Links to retro gaming purchase websites.
+Forum and/or chat facilities within the application allowing users to discuss various topics in relation to this genre of retro gaming.
 
 # Page Layout, Typography and Color Scheme
 
