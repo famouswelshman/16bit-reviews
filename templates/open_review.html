@@ -12,9 +12,8 @@
       <div class="col-lg-6">
         <img src="{{ review.img_url }}" class="card-img-top" alt="game picture" width="auto" height="80%">
       </div>
-
       <div class="col-lg-6" style="color: white;" height: 500px;>
-        <h2 class="card-text" style="border: 0.1px solid grey;">{{ review.game_name }}</h2>
+        <h2 class="card-text">{{ review.game_name }}</h2>
         <div class="col-md-12">
           <p class="review-info">
             {{ review.review_input }}
@@ -25,23 +24,12 @@
         </div>
       </div>
       <p class="row" style="color: white;">Created by:<br>{{ review.created_by }}</p>
-   
- 
-
-    <div class="row justify-content-center">
-     <div class="col-6">
-        <a href="{{ url_for('edit_review', review_id=review._id) }}" button type="button" class="btn btn-success">Edit</button></a>
-      </div>
-   
-     
-     <div class="col-6">
-      <button type="button" class="btn btn-danger">Delete</button>
-     </div>
-     <br>
-     <br>
-        
-        
- 
-
-
-{% endblock %}
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <a href="{{ url_for('edit_review', review_id=review._id) }}" button type="button"
+            class="btn btn-success">Edit</button></a>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+        {% endblock %}
