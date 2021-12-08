@@ -3,20 +3,22 @@
 
 <!-----SEARCH FUNCTION------>
 
-<form class="col s12" method="POST" action="{{ url_for('search') }}">
+<form class="col-12" method="POST" action="{{ url_for('search') }}">
   <div class="search-container>">
     <div class="input-group mb-6">
-      <input type="text" name="query" id="query" class="form-control form-control-lg" placeholder="Search Reviews"
-        required>
+      <input type="text" name="query" id="query" class="form-control form-control-lg" placeholder="Search Reviews" required>
       <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>
-      <a href="{{ url_for('get_reviews') }}">
-        <button type="button" class="btn btn-danger">Reset</button>
-      </a>
-    </div>
-  </div>
-</form>
+      <a href="{{ url_for('get_reviews') }}"><button type="button" class="btn btn-danger">Reset</button></a>
+      </div>
+      </div>
+    </form>
+      
+ 
+
+
 
 <!-----Review Card Template------>
+
 <div class="card-container">
   <div class="row">
     {% for review in reviews %}
@@ -31,7 +33,7 @@
             <div class="card-review-details">
               <li class="list-group-item" style="flex-wrap: wrap;">{{ review.review_input }}</li>
             </div>
-
+    
             <p class="cont" style="color: red;"><a
                 href="{{ url_for('open_review', review_id=review._id) }}"></a>Continue reading....</p>
             <li class="list-group-item">{{ review.rating }}</li>
@@ -45,7 +47,10 @@
             style="padding: 10px;">
             <button type="button">Read Review</button></a>
         </div>
+        
       </div>
     </div>
     {% endfor %}
+
+   
     {% endblock %}

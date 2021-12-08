@@ -186,6 +186,8 @@ In order to meet the project requirements, the use of MongoDB as a non-relationa
 
 # Other Credits
 StartBootstrap - E-Commerce template downloaded and customozed for project
+https://pretagteam.com/ - Javascript Pop-Up to notify user before deletion of data.
+
 
 ## Libraries used
 * Flask a framework of Python used to build the web application.
