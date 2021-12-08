@@ -7,7 +7,7 @@
     <h2>Edit Your Review</h2>
   </div>
   <div class="row">
-    <form class="col s12" method="POST" action="">
+    <form class="col s12" method="POST" action="{{ url_for('edit_review', review_id=review._id) }}">
       <!----------   CONSOLE SELECTOR DROPDOWN------->
       <div class="row">
         <div class="input-field col s12">
@@ -55,8 +55,9 @@
         <div class="buttons-container">
           <br>
           <br>
-          <input class="btn btn-primary" type="submit" value="Submit Review">
-          <input class="btn btn-warning" type="submit" value="Edit">
+          <a href="{{ url_for('get_reviews') }}"><input class="btn btn-primary" type="submit" value="Submit"></a>
+
+          <a href="{{ url_for('get_reviews') }}"><input class="btn btn-danger" type="action" value="Cancel"></a>
         </div>
       </div>
     </form>

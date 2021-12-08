@@ -132,10 +132,22 @@ def search():
 # Edit review
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
-    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+    if request.method == "POST":
+        submit = {
+            "console_name": request.form.get("console_name"),
+            "game_name": request.form.get("game_name"),
+            "review_title": request.form.get("review_title"),
+            "review_input": request.form.get("review_input"),
+            "img_url": request.form.get("img_url"),
+            "created_by": session["user"]
+        }
+        mongo.db.reviews.update({"_id": ObjectId(review_id)}, submit)
+        flash("Review Successfully Updated")
 
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_review.html", review=review, categories=categories)
+
 
 
 if __name__ == "__main__":
