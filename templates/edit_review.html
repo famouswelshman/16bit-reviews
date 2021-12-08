@@ -55,9 +55,11 @@
         <div class="buttons-container">
           <br>
           <br>
+          {% if session.user|lower == review.created_by|lower %}
           <a href="{{ url_for('get_reviews') }}"><input class="btn btn-primary" type="submit" value="Submit"></a>
 
           <a href="{{ url_for('get_reviews') }}"><input class="btn btn-danger" type="action" value="Cancel"></a>
+          {% endif %}
         </div>
       </div>
     </form>
