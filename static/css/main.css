@@ -96,17 +96,8 @@
   background-color: #0f5132;
 }
 
-.cards {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-auto-rows: auto;
-grid-gap: 1rem;
-background-color: green;
-}
-  
 .card-container {
   text-align: center;
-  width: auto;
 }
 
 .card {
@@ -118,7 +109,10 @@ margin-bottom: 50px;
 .card-title {
 resize: none; 
 background-color: orange;
-font-size: 1.0vw;
+white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 200px;
 }
 
 .creator {
