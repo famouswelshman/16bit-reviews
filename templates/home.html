@@ -20,34 +20,19 @@
 <div class="card-container">
   <div class="row">
     {% for review in reviews %}
-    <div class="col col-lg-3 col-md-4 col-sm-12">
+    <div class="col col-lg-2 col-md-3 col-sm-6">
+
       <div class="card">
         <img src="{{ review.img_url }}" class="card-img-top" alt="game picture">
+        <h6 class="card-title"><i>"{{ review.review_title }}"</i></h6>
         <div class="card-body">
-          <h4 class="card-title"><i>"{{ review.review_title }}"</i></h4>
-          <p class="card-text">{{ review.game_name }}</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">{{ review.console_name }}</li>
-            <div class="card-review-details">
-              <li class="list-group-item" style="flex-wrap: wrap;">{{ review.review_input }}</li>
-            </div>
-    
-            <p class="cont" style="color: red;"><a
-                href="{{ url_for('open_review', review_id=review._id) }}"></a>Continue reading....</p>
-            <li class="list-group-item">{{ review.rating }}</li>
-            <li class="list-group-item">
-              <b>Created by:</b>&nbsp{{ review.created_by }}
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <a href="{{ url_for('open_review', review_id=review._id) }}" class="btn btn-outline-primary"
-            style="padding: 10px;">
-            <button type="button">Read Review</button></a>
+          <p class="card-text" style="height: 10px;"><a href="{{ url_for('open_review', review_id=review._id) }}" class="btn btn-primary">Read Review..</a>
+            </p>
+            <br>
+          <div class="creator">Created by:&nbsp{{ review.created_by }}</div>
         </div>
       </div>
-    </div>
- 
+      </div>
     {% endfor %}
 
    

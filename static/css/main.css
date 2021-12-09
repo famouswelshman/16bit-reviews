@@ -71,7 +71,6 @@
 }
 
 .hero img {
-  padding: 25px;
   width: 45%;
   height: auto;
   display: flex;
@@ -106,16 +105,27 @@ background-color: green;
 }
   
 .card-container {
-  padding: 15px, 15px, 15px, 15px;
   text-align: center;
-  word-wrap: var(--bs-aspect-ratio);
+  width: auto;
 }
 
 .card {
 border: 2px solid #e7e7e7;
 border-radius: 4px; 
-padding: .5rem;
 margin-bottom: 50px; 
+}
+
+.card-title {
+resize: none; 
+background-color: orange;
+font-size: 1.0vw;
+}
+
+.creator {
+  font-size: 0.5vw;
+}
+.card-text {
+width: auto;
 }
 
 .btn-outline-primary {
@@ -201,6 +211,10 @@ footer {
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
+}
+
+.list-group-item {
+  font size: 15px;
 }
 
 *,
