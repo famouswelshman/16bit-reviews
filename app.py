@@ -158,6 +158,16 @@ def delete_review(review_id):
     return redirect(url_for("get_reviews"))
 
 
+ROWS_PER_PAGE = 5
+
+@app.route('/reviews/<review_id>')
+def reviews():
+    # Set the pagination configuration
+    reviews = request.args.get('page', 1, type=int)
+    reviews = list(mongo.db.reviews.paginate(page=page, per_page=ROWS_PER_PAGE)
+    eturn render_template("edit_review.html", reviews=reviews)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

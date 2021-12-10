@@ -106,13 +106,22 @@ border-radius: 4px;
 margin-bottom: 50px; 
 }
 
-.card-title {
+.card-details {
 resize: none; 
 background-color: orange;
 white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 200px;
+overflow: hidden;
+text-overflow: ellipsis;
+font-size: 10px;
+padding: 5px;
+}
+
+.card-title {
+resize: none; 
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+max-height: 200px;
 }
 
 .creator {
