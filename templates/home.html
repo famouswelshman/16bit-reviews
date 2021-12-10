@@ -6,13 +6,14 @@
 <form class="col-12" method="POST" action="{{ url_for('search') }}">
   <div class="search-container>">
     <div class="input-group mb-6">
-      <input type="text" name="query" id="query" class="form-control form-control-lg" placeholder="Search Reviews" required>
+      <input type="text" name="query" id="query" class="form-control form-control-lg" placeholder="Search Reviews"
+        required>
       <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>
-      <a href="{{ url_for('get_reviews') }}"><button type="button" class="btn btn-danger">Reset</button></a>
-      </div>
-      </div>
-    </form>
-      
+      <a href="{{ url_for('get_reviews') }}"><button type="button" class="btn btn-primary btn-lg">Reset</button></a>
+    </div>
+  </div>
+</form>
+
 
 
 <!-----Review Card Template------>
@@ -26,14 +27,15 @@
         <img src="{{ review.img_url }}" class="card-img-top" alt="game picture">
         <h6 class="card-title"><i>"{{ review.review_title }}"</i></h6>
         <div class="card-body">
-          <p class="card-text" style="height: 10px;"><a href="{{ url_for('open_review', review_id=review._id) }}" class="btn btn-primary">Read Review..</a>
-            </p>
-            <br>
+          <p class="card-text" style="height: 10px;"><a href="{{ url_for('open_review', review_id=review._id) }}"
+              class="btn btn-primary">Read Review..</a>
+          </p>
+          <br>
           <div class="creator">Created by:&nbsp{{ review.created_by }}</div>
         </div>
       </div>
-      </div>
+    </div>
     {% endfor %}
 
-   
+
     {% endblock %}

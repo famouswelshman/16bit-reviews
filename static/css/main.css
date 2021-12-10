@@ -192,10 +192,10 @@ width: auto;
 }
 
 footer {
-  background-color: slategrey;
+  background-color: antiquewhite;
   width: 100%;
-  margin-top: 300px;
-  position: sticky;
+  position: static;
+  margin-top: 100px;
   bottom: 0;
 }
 
