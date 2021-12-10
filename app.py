@@ -159,13 +159,13 @@ def delete_review(review_id):
 
 
 ROWS_PER_PAGE = 5
-
-@app.route('/reviews/<review_id>')
-def reviews():
+@app.route('/tasks')
+def tasks():
     # Set the pagination configuration
-    reviews = request.args.get('page', 1, type=int)
-    reviews = list(mongo.db.reviews.paginate(page=page, per_page=ROWS_PER_PAGE)
-    eturn render_template("edit_review.html", reviews=reviews)
+    page = request.args.get('page', 1, type=int)
+
+    tasks = mongo.db.tasks.paginate(page=page, per_page=ROWS_PER_PAGE)
+    return render_template('tasks.html', tasks=tasks)
 
 
 if __name__ == "__main__":
