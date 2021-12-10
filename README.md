@@ -87,6 +87,11 @@ Add review form facility where users can added their own data and submit to be d
 Links to retro gaming purchase websites.
 Forum and/or chat facilities within the application allowing users to discuss various topics in relation to this genre of retro gaming.
 
+# Nice to have features
+Since the home page of the app is displaying all content review cards then it would be nice to intergrate some pagination which would be able to layout the review cards 
+according to a page system enabling the user to scroll through pages of layout rather than have to scroll down screen and view everything entered as content onto the application.
+
+
 # Page Layout, Typography and Color Scheme
 
 # MS3 Wireframes ---- Using Balsamic

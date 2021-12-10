@@ -158,15 +158,6 @@ def delete_review(review_id):
     return redirect(url_for("get_reviews"))
 
 
-ROWS_PER_PAGE = 5
-@app.route('/tasks')
-def tasks():
-    # Set the pagination configuration
-    page = request.args.get('page', 1, type=int)
-
-    tasks = mongo.db.tasks.paginate(page=page, per_page=ROWS_PER_PAGE)
-    return render_template('tasks.html', tasks=tasks)
-
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
