@@ -15,14 +15,14 @@
 </form>
 
 
- 
-<!-----Review Card Template------>
 
+        
+<!-----Review Card Template------>
+{% if review|length > 0 %}
 <div class="card-container">
   <div class="row">
     {% for review in reviews %}
     <div class="col col-lg-2 col-md-3 col-sm-12">
-
       <div class="card">
         <img src="{{ review.img_url }}" class="card-img-top" alt="game picture" onerror="this.src='/static/images/default_logo.jpg'">
         <h6 class="card-title"><i>"{{ review.review_title }}"</i></h6>
@@ -38,7 +38,11 @@
         </div>
       </div>
     </div>
-
     {% endfor %}
 
-    {% endblock %}
+{% else %}    
+    <h2 class="search-not-found" style="color: red;">No results found</h2>
+{% endif %}
+
+
+{% endblock %}
