@@ -6,7 +6,8 @@
 <form class="col-12" method="POST" action="{{ url_for('search') }}">
   <div class="search-container>">
     <div class="input-group mb-6">
-      <input type="text" name="query" id="query" minlength="3" class="form-control form-control-lg" placeholder="Search Reviews" required>
+      <input type="text" name="query" id="query" minlength="3" class="form-control form-control-lg" placeholder="Search Reviews"
+        required>
       <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>
       
       <a href="{{ url_for('get_reviews') }}"><button type="button" class="btn btn-primary btn-lg">Reset</button></a>
@@ -18,7 +19,7 @@
 
         
 <!-----Review Card Template------>
-{% if review|length > 0 %}
+
 <div class="card-container">
   <div class="row">
     {% for review in reviews %}
@@ -38,11 +39,12 @@
         </div>
       </div>
     </div>
+    {% else %}    
+    <h2 class="search-not-found" style="color: red;">No results found</h2>
     {% endfor %}
 
-{% else %}    
-    <h2 class="search-not-found" style="color: red;">No results found</h2>
-{% endif %}
+
+
 
 
 {% endblock %}
