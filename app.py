@@ -157,7 +157,14 @@ def delete_review(review_id):
     flash("Review Successfully Deleted")
     return redirect(url_for("get_reviews"))
 
+# Users Reviews Only
+@app.route("/user_reviews", methods=["GET"])
+def user_reviews():
+    review = mongo.db.reviews.find()
+    return render_template("user_reviews.html")
 
+
+# Javascript link
 @app.route("/scripts_js")
 def scripts_js():
     render_template("/js/scripts.js")
