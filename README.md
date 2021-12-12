@@ -78,7 +78,6 @@ Users have the facility to create a login via the login page where a username an
 
 
 
-
 # Website features
 Search function bar allowing user logged in or not to view data according to their specific search criteria.
 Add review form facility where users can added their own data and submit to be displayed on the review home page.
@@ -119,11 +118,11 @@ The home page would display multiple reviews and the responsive element of the p
 
 # Testing
 
+# Code Validation
 ## HTML
 ## CSS
 ## Javascript
 ## Flask (Python)
-
 
 
 # Validation
@@ -132,6 +131,11 @@ The home page would display multiple reviews and the responsive element of the p
 ## CSS
 ## Javascript
 ## Flask (Python)
+
+
+# Functionality Testing
+
+
 
 # Summary of Testing
 Calling the @app.route (open_review) proved to be a big task since the focus for an individual review was based on the Object Id applicable to that specific review detail.
@@ -182,8 +186,6 @@ of it's setup was relatively straightforward and differs slightly in that unique
 https://account.mongodb.com/
 
 In order to meet the project requirements, the use of MongoDB as a non-relational database was required. Here is where the data is stored as a result of the python app submit functions running on the application. In turn, selective data is then returned to the application to be read, edited and deleted as per the user who is signed into the application. The connection between the project files and the DB is maintained via the env.py file and this is classed as hidden and does not get uploaded to Github for security purposes.
-
-
 
 
 # Media Credits
