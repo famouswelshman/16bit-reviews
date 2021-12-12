@@ -122,7 +122,7 @@ def open_review(review_id):
     review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     return render_template("open_review.html", review=review)
 
-# Search reviews by name (text)
+# Search reviews by (text)
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
