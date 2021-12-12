@@ -158,6 +158,10 @@ def delete_review(review_id):
     return redirect(url_for("get_reviews"))
 
 
+@app.route("/scripts_js")
+def scripts_js():
+    render_template("/js/scripts.js")
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
