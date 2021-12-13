@@ -58,16 +58,16 @@ Additional libraries and external APIs which include Bootstrap.
 * Users want to be able to edit and delete their own reviews.
 * User wants security features in place so that other users cannot edit or delete their own reviews.
 
-## User story 1
+### User story 1
 First time user will visit the website application and be able to view a homepage consisting of a layout of reviews based on users input. They can search the application via the search facility in order to return reviews which are relvant to their search. This could be a search for a specific console or a game name or indeed review content. The user can then view this content for intersting review content.
 
-## User story 2
+### User story 2
 First time user can view the content of the application via the home page and navigate via the navbar to registration page and create an account. User then logged in can still view all review data but this allows them to create their own reviews and add to the application which in turn will show via the home page. 
 
-## User story 3
+### User story 3
 User who is logged into the account would like to open all the review data relevant to their account and they can do this by clicking on the ‘Manage your reviews’ link within the navbar. This page is available to filter all the review content relavent to the user. 
 
-## User story 4
+### User story 4
 User who is logged into the account would like to return to their previous review and edit this to either add to the content or simply amend it and be able to save this which will in turn update to the backend database and then return to display on the homepage. Alternatively, user can access their review information and be able to delete this from the applicat
 
 ## Structure:
