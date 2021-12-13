@@ -6,18 +6,15 @@
 <form class="col-12 col-md-12 col-sm-12" method="POST" action="{{ url_for('search') }}">
   <div class="search-container>">
     <div class="input-group mb-6">
-      <input type="text" name="query" id="query" minlength="3" class="form-control form-control-lg" placeholder="Search Reviews"
-        required>
+      <input type="text" name="query" id="query" minlength="3" class="form-control form-control-lg"
+        placeholder="Search Reviews" required>
       <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>
-      
+
       <a href="{{ url_for('get_reviews') }}"><button type="button" class="btn btn-primary btn-lg">Reset</button></a>
     </div>
   </div>
 </form>
 
-
-
-        
 <!-----Review Card Template------>
 
 <div class="card-container">
@@ -25,11 +22,13 @@
     {% for review in reviews %}
     <div class="col col-lg-2 col-md-3 col-sm-6">
       <div class="card">
-        <img src="{{ review.img_url }}" class="card-img-top" alt="game picture" onerror="this.src='/static/images/default_logo.jpg'">
+        <img src="{{ review.img_url }}" class="card-img-top" alt="game picture"
+          onerror="this.src='/static/images/default_logo.jpg'">
         <h6 class="card-title"><i>"{{ review.review_title }}"</i></h6>
         <div class="card-details">
           {{ review.review_input }}
         </div>
+        
         <div class="card-body">
           <p class="card-text" style="height: 10px;"><a href="{{ url_for('open_review', review_id=review._id) }}"
               class="btn btn-primary">Read Review..</a>
@@ -39,12 +38,15 @@
         </div>
       </div>
     </div>
-    {% else %}    
+    
+    {% else %}
     <h2 class="search-not-found" style="color: red;">No results found</h2>
     {% endfor %}
+  </div>
+</div>
+ 
 
 
 
 
-
-{% endblock %}
+    {% endblock %}

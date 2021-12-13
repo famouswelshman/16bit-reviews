@@ -82,18 +82,15 @@ Users have the facility to create a login via the login page where a username an
 Search function bar allowing user logged in or not to view data according to their specific search criteria.
 Add review form facility where users can added their own data and submit to be displayed on the review home page.
 
-# Future Features
-Links to retro gaming purchase websites.
-Forum and/or chat facilities within the application allowing users to discuss various topics in relation to this genre of retro gaming.
-
 # Nice to have features
 Since the home page of the app is displaying all content review cards then it would be nice to intergrate some pagination which would be able to layout the review cards 
 according to a page system enabling the user to scroll through pages of layout rather than have to scroll down screen and view everything entered as content onto the application.
 
-Although the user can add their reviews, the application doesnt currently support the ability to host all reviews relevant to the same game name.
+Although the user can add their reviews, the application doesnt currently support the ability to host all reviews relevant to the same game name. In other words, the single topic of one game does not allow users to add their reviews specifically to this game title, something that can be further implemented by adding all game choices to the Mongo Database and allowing the user to select at the time of creating a review. All similar reviews can then be grouped under that game name heading so the user has access to all reviews which are in relation to that specific game name.
 
-
-# Page Layout, Typography and Color Scheme
+# Future Features
+Links to retro gaming purchase websites.
+Forum and/or chat facilities within the application allowing users to discuss various topics in relation to this genre of retro gaming.
 
 # MS3 Wireframes ---- Using Balsamic
 So the early design ideas were centered around a sort of Netflix style web application, displaying multiple review content on the home page and the allowing the user to 

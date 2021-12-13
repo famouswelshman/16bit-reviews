@@ -6,6 +6,7 @@
   <div class="row">
     <h2>Add Your Review</h2>
   </div>
+  </div>
   <div class="row">
     <form class="col s12" method="POST" action="{{ url_for('create_review') }}">
       <!----------   CONSOLE SELECTOR DROPDOWN------->
@@ -17,7 +18,7 @@
             <option value="{{ category.console_name }}">{{ category.console_name }}</option>
             {% endfor %}
           </select>
-          <label for="category_name">Choose Game Console</label>
+          <label for="category_name" style="color: silver;">Choose Game Console</label>
         </div>
         <br>
         <br>
@@ -29,14 +30,13 @@
         <!------ review TITLE ------------->
         <div class="input-group mb-10">
           <input type="text" class="form-control" id="review_title" name="review_title" placeholder="Review Title"
-            aria-label="review_title" aria-describedby="basic-addon2" required>
+            aria-label="review_title" required>
         </div>
         <!------------- Image Upload ----------->
-        <label for="basic-url" class="form-label">---------------</label>
+        <label for="basic-url" class="form-label"></label>
         <div class="input-group mb-3">
           <input type="text" class="form-control" id="img_url" name="img_url"
-            placeholder="Image URL (find image online and right click on image, copy image address link and paste here"
-            aria-describedby="basic-addon3">
+            placeholder="Image URL (find image online and right click on image, copy image address link and paste here">
         </div>
 
         <!---- REVIEW DETAILS INPUT ----->
@@ -56,8 +56,8 @@
 
         </div>
       </div>
+    </div>
     </form>
-    <br>
-    <br>
+
 
     {% endblock %}

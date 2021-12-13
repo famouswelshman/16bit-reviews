@@ -14,11 +14,11 @@
           <select id="console_name" name="console_name" class="validate" required>
             <option value="" disabled selected>Choose Category</option>
             {% for category in categories %}
-                {% if category.category_name == review.console_name %}
+            {% if category.category_name == review.console_name %}
             <option value="{{ category.console_name }}" selected>{{ category.console_name }}</option>
-                {% else %}
+            {% else %}
             <option value="{{ category.console_name }}">{{ category.console_name }}</option>
-                {% endif %}
+            {% endif %}
             {% endfor %}
           </select>
           <label for="category_name">Choose Game Console</label>
@@ -27,7 +27,7 @@
         <br>
         <!----- GAME NAME INPUT ---->
         <div class="input-group mb-3">
-          <input type="text" class="form-control" id="game_name" malength="20" name="game_name" placeholder="Game Name"
+          <input type="text" class="form-control" id="game_name" maxlength="20" name="game_name" placeholder="Game Name"
             aria-label="game_name" aria-describedby="basic-addon1" value="{{ review.game_name }}" required>
         </div>
         <!------ review TITLE ------------->
@@ -39,7 +39,7 @@
         <label for="basic-url" class="form-label">---------------</label>
         <div class="input-group mb-3">
           <input type="text" class="form-control" id="img_url" name="img_url"
-            placeholder="Image URL (copy image address link and paste here" value="{{ review.img_url }}" aria-describedby="basic-addon3">
+            placeholder="Image URL (copy image address link and paste here" value="{{ review.img_url }}">
         </div>
 
         <!---- REVIEW DETAILS INPUT ----->
