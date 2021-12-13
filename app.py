@@ -166,8 +166,8 @@ def scripts_js():
 # Get user only reviews
 @app.route("/user_reviews/")
 def user_reviews():
-    reviews = mongo.db.reviews.find()
-    return render_template("user_reviews.html", reviews=reviews)
+    review = mongo.db.reviews.find()
+    return render_template("user_reviews.html", review=review)
 
 
 

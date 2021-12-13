@@ -2,14 +2,12 @@
 {% block content %}
 
 
-
-        
 <!-----Review Card Template------>
 
 <div class="card-container">
   <div class="row">
-    {% for review in reviews %}
-    <div class="col col-lg-2 col-md-3 col-sm-12">
+    {% if review.created_by == session.user %}
+    <div class="col col-lg-2 col-md-3 col-sm-6">
       <div class="card">
         <img src="{{ review.img_url }}" class="card-img-top" alt="game picture" onerror="this.src='/static/images/default_logo.jpg'">
         <h6 class="card-title"><i>"{{ review.review_title }}"</i></h6>
@@ -25,12 +23,7 @@
         </div>
       </div>
     </div>
-    {% else %}    
-    <h2 class="search-not-found" style="color: red;">No results found</h2>
-    {% endfor %}
-
-
-
+    {% endif %}
 
 
 {% endblock %}
