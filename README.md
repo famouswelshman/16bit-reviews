@@ -51,29 +51,24 @@ Additional libraries and external APIs which include Bootstrap.
 # User Stories:
 * Visitors want to know more about the content of the site.
 * New visitors want to easily navigate the website.
+* User wants to view the website content on any device including a desktop and a mobile handset.
 * Users want to register their details on the site to be able to add their own reviews.
 * User wants to be able to search the home page for review information using text search words such as game name or console name.
 * The user wants to be able to view other user reviews.
 * Users want to be able to edit and delete their own reviews.
 * User wants security features in place so that other users cannot edit or delete their own reviews.
 
-## User story 1
+1. User story 1
 First time user will visit the website application and be able to view a homepage consisting of a layout of reviews based on users input. They can search the application via the search facility in order to return reviews which are relvant to their search. This could be a search for a specific console or a game name or indeed review content. The user can then view this content for intersting review content.
 
-## User story 2
+2. User story 2
 First time user can view the content of the application via the home page and navigate via the navbar to registration page and create an account. User then logged in can still view all review data but this allows them to create their own reviews and add to the application which in turn will show via the home page. 
 
-## User story 3
+3. User story 3
 User who is logged into the account would like to open all the review data relevant to their account and they can do this by clicking on the ‘Manage your reviews’ link within the navbar. This page is available to filter all the review content relavent to the user. 
 
-## User story 4
+4. User story 4
 User who is logged into the account would like to return to their previous review and edit this to either add to the content or simply amend it and be able to save this which will in turn update to the backend database and then return to display on the homepage. Alternatively, user can access their review information and be able to delete this from the applicat
-
-## Features:
-* User friendly, responsive site that loads quickly and is intuitive. Immediately displays the content and shows the purpose of this application.
-* Simple Navbar to quickly navigate to the relevant pages that is also collapsable for smaller media.
-* Search and filter feature to display relevant reviews based on category search items.
-* Users can add, edit or delete their own reviews and can view other users reviews but cannot edit or delete.
 
 ## Structure:
 * Each web page will display consistent Navbar and footer along with hero image.
@@ -89,9 +84,12 @@ The website is basic in it's design and layout but this adds to the simplistic t
 
 Users have the facility to create a login via the login page where a username and password are required for setup and to protect their details. This then allows registered users to to create their own review information and add it to the the application and/or edit or delete this information further.
 
-# Website features
-Search function bar allowing user logged in or not to view data according to their specific search criteria.
-Add review form facility where users can added their own data and submit to be displayed on the review home page.
+## Features:
+* User friendly, responsive site that loads quickly and is intuitive. Immediately displays the content and shows the purpose of this application.
+* Simple Navbar to quickly navigate to the relevant pages that is also collapsable for smaller media.
+* Search and filter feature to display relevant reviews based on category search items.
+* Users can add, edit or delete their own reviews and can view other users reviews but cannot edit or delete.
+
 
 # Nice to have features
 Since the home page of the app is displaying all content review cards then it would be nice to intergrate some pagination which would be able to layout the review cards 
@@ -103,6 +101,8 @@ In this project I did not implement a 404 error page if there was a break in the
 got to an area which is not valid. This is typical of a scenario where another user could type in the edit_review function directly into the browser but since I have edited the code to return the user to log in screen this might be something for future projects where a 404 error page would instead pop up to notify the user that this is not possible and to return to another page within the application.
 
 A nice feature to have would be a like facility where users have the ability to click a thumbs up or a thumbs down function per review and/or a star ratings visual on each review to show to users how others have ratef their review content.
+
+An admin account facility that can control all activity across the application.
 
 # Future Features
 Links to retro gaming purchase websites.
@@ -164,9 +164,6 @@ The css file was built on basic structure to ensure the application was responsi
 
 # Functionality Testing
 
-
-
-# User Story Testing
 
 
 
