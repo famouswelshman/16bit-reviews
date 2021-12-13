@@ -100,6 +100,8 @@ def logout():
 # Add a new review
 @app.route("/create_review", methods=["GET", "POST"])
 def create_review():
+    if session.get('user') is None:
+        return redirect(url_for("login"))
     if request.method == "POST":
         review = {
             "console_name": request.form.get("console_name"),
@@ -132,6 +134,13 @@ def search():
 # Edit review
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
+    if session.get('user') is None:
+        return redirect(url_for("login"))
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+    if not review: 
+        return redirect(url_for("login"))
+    if review['created_by'] != session["user"]:
+        return redirect(url_for("login"))
     if request.method == "POST":
         submit = {
             "console_name": request.form.get("console_name"),
@@ -145,7 +154,7 @@ def edit_review(review_id):
         flash("Review Successfully Updated")
         return redirect(url_for("get_reviews"))
 
-    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+    
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_review.html", review=review, categories=categories)
 

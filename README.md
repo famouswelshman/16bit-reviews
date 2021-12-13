@@ -90,6 +90,8 @@ Forum and/or chat facilities within the application allowing users to discuss va
 Since the home page of the app is displaying all content review cards then it would be nice to intergrate some pagination which would be able to layout the review cards 
 according to a page system enabling the user to scroll through pages of layout rather than have to scroll down screen and view everything entered as content onto the application.
 
+Although the user can add their reviews, the application doesnt currently support the ability to host all reviews relevant to the same game name.
+
 
 # Page Layout, Typography and Color Scheme
 
