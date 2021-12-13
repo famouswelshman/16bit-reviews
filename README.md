@@ -1,8 +1,8 @@
-# MILESTONE 3 – Project Ideas
+# MILESTONE 3 – Data Centric Development 
 
-Github Link:
+Github Link: https://github.com/famouswelshman/reviews-16bit.git
 
-Website is hosted via Heroku at :
+Website is hosted via Heroku and can be found via link : https://reviews-16bit.herokuapp.com/
 
 # Purpose of this project – Milestone 3
 The purpose of this project was to create a User friendly, front and back-end application to allow user to Create, Read, Update and Delete data under their own user login. CRUD
@@ -103,18 +103,19 @@ The key here was to present the review data in a symetrical fashion and allow th
 
 The home page would display multiple reviews and the responsive element of the page meant that the amount of content shows would be reduced based on screen media sizes.
 
-## Desktop Open Review Page template
-![wireframe5](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/desktop_review_template.png)
+## Desktop Home Page Template
+![wireframe1](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/desktop_home.png)
+
+## Desktop Open Review Page Template
+![wireframe2](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/desktop_review_template.png)
 
 ## Medium Media Open Review Page Template
-![wireframe6](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/medium_review_template.png)
+![wireframe3](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/medium_review_template.png)
 
 ## Mobile Open Review Page Template
 ![wireframe7](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/mobile_review_template.png)
 
-
 # Database Schema (MongoDB)
-
 ![MongoDB_schematic](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/MongoDB_Schematic.jpg)
 
 
@@ -141,6 +142,7 @@ The home page would display multiple reviews and the responsive element of the p
 
 # Summary of Testing
 Calling the @app.route (open_review) proved to be a big task since the focus for an individual review was based on the Object Id applicable to that specific review detail.
+
 
 # Project Challenges
 Getting the review cards to show up in sequence and semetrically on the home page required selecting use of Bootstrap grid code to enable the content of each review to show in a structured fashion on screen and be responsive to all media screen sizes.
