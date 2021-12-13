@@ -3,7 +3,7 @@
 
 <!-----SEARCH FUNCTION------>
 
-<form class="col-12" method="POST" action="{{ url_for('search') }}">
+<form class="col-12 col-md-12 col-sm-12" method="POST" action="{{ url_for('search') }}">
   <div class="search-container>">
     <div class="input-group mb-6">
       <input type="text" name="query" id="query" minlength="3" class="form-control form-control-lg" placeholder="Search Reviews"
@@ -23,7 +23,7 @@
 <div class="card-container">
   <div class="row">
     {% for review in reviews %}
-    <div class="col col-lg-2 col-md-3 col-sm-12">
+    <div class="col col-lg-2 col-md-3 col-sm-6">
       <div class="card">
         <img src="{{ review.img_url }}" class="card-img-top" alt="game picture" onerror="this.src='/static/images/default_logo.jpg'">
         <h6 class="card-title"><i>"{{ review.review_title }}"</i></h6>
