@@ -5,9 +5,9 @@ Github Link: https://github.com/famouswelshman/reviews-16bit.git
 Website is hosted via Heroku and can be found via link : https://reviews-16bit.herokuapp.com/
 
 # Purpose of this project – Milestone 3
-The purpose of this project was to create a User friendly, front and back-end application to allow user to Create, Read, Update and Delete data under their own user login. CRUD
+The purpose of this project was to create a User friendly, front and back-end application to allow user to Create, Read, Update and Delete data under their own user login.
 
-User can read and user registered can add, edit and delete.
+Users can read review data and registered users can add, edit and delete their review data.
 
 A website application that allows users to view 16 bit console game details and user reviews by method of search using key words in relation to the console brands available or key words pertaining to the games featured on the site. Upon completion of user registering a username and password, user can further search and add their own reviews alongside the game and click on a star based rating function. User will be able to edit and/or delete their reviews and whilst this information is visible to all users, editing and deletion will only be achieved by the user who added this.
 
@@ -34,7 +34,7 @@ Neo Geo
 
 ## Main Technologies
 Required: HTML, CSS, JavaScript, Python+Flask, MongoDB
-Additional libraries and external APIs
+Additional libraries and external APIs which include Bootstrap.
 
 * Html & CSS
 * Python + Flask
@@ -69,7 +69,6 @@ Additional libraries and external APIs
 reviews relevant to their search word.
 * Review data will load up on seperate page and providing they are the user logged in will allow edit and delete functions.
 
-
 # Website UX
 The idea was based on similar review based websites but for the purpose of reviewing a selective genre of video games, namely the 16bit era of gaming.
 Users can access the website and instantly view reviews set out on the home page. There is a search bar function that allows the user to quickly search for specific review details according to their requirements.
@@ -77,7 +76,6 @@ Users can access the website and instantly view reviews set out on the home page
 The website is basic in it's design and layout but this adds to the simplistic theme of the site which is based on the 16bit game genre. Content is bold and bright and the website is easy to navigate.
 
 Users have the facility to create a login via the login page where a username and password are required for setup and to protect their details. This then allows registered users to to create their own review information and add it to the the application and/or edit or delete this information further.
-
 
 # Website features
 Search function bar allowing user logged in or not to view data according to their specific search criteria.
@@ -91,6 +89,8 @@ Although the user can add their reviews, the application doesnt currently suppor
 
 In this project I did not implement a 404 error page if there was a break in the program, something I would like to introduce in the future so that the user is aware that they have
 got to an area which is not valid. This is typical of a scenario where another user could type in the edit_review function directly into the browser but since I have edited the code to return the user to log in screen this might be something for future projects where a 404 error page would instead pop up to notify the user that this is not possible and to return to another page within the application.
+
+A nice feature to have would be a like facility where users have the ability to click a thumbs up or a thumbs down function per review and/or a star ratings visual on each review to show to users how others have ratef their review content.
 
 # Future Features
 Links to retro gaming purchase websites.
@@ -119,6 +119,20 @@ The home page would display multiple reviews and the responsive element of the p
 # Database Schema (MongoDB)
 ![MongoDB_schematic](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/MongoDB_Schematic.jpg)
 
+# User Stories
+
+## User story 1
+First time user will visit the website application and be able to view a homepage consisting of a layout of reviews based on users input. They can search the application via the search facility in order to return reviews which are relvant to their search. This could be a search for a specific console or a game name or indeed review content. The user can then view this content for intersting review content.
+
+## User story 2
+First time user can view the content of the application via the home page and navigate via the navbar to registration page and create an account. User then logged in can still view all review data but this allows them to create their own reviews and add to the application which in turn will show via the home page. 
+
+## User story 3
+User who is logged into the account would like to open all the review data relevant to their account and they can do this by clicking on the ‘Manage your reviews’ link within the navbar. This page is available to filter all the review content relavent to the user. 
+
+## User story 4
+User who is logged into the account would like to return to their previous review and edit this to either add to the content or simply amend it and be able to save this which will in turn update to the backend database and then return to display on the homepage. Alternatively, user can access their review information and be able to delete this from the application.
+
 
 # Validation
 
@@ -140,6 +154,7 @@ remain visible are in relation to placeholder image not conforming to Upper case
 Testing for responsive element of this app took considerable time although i chose a pre built template from Bootstrap as the framework for my front end application but this required additional
 containers and the use of a cards insert from Bootstrap to visually display the review data.
 ## CSS
+The css file was built on basic structure to ensure the application was responsive. Part of the css file was part of the Bootstrap pre-built web page which I factored into use in this project.
 
 ## Javascript
 ## Flask (Python)
