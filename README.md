@@ -49,15 +49,17 @@ Additional libraries and external APIs
 * Materialize (Pre built page layout)
 
 # User Stories:
-* Visitors can want to know more about the content of the site.
+* Visitors want to know more about the content of the site.
 * New visitors want to easily navigate the website.
-* Users want to register their details on the site to be able to add reviews and rate the game.
+* Users want to register their details on the site to be able to add their own reviews.
+* User wants to be able to search the home page for review information using text search words such as game name or console name.
 * The user wants to be able to view other user reviews.
-* User wants to be directed to where they can buy the game.
+* Users want to be able to edit and delete their own reviews.
+* User wants security features in place so that other users cannot edit or delete their own reviews.
 
 ## Features:
 * User friendly, responsive site that loads quickly and is intuitive. Immediately displays the content and shows the purpose of this application.
-* Simple Navbar to quickly navigate to the relevant page and that is also collapsable for smaller media.
+* Simple Navbar to quickly navigate to the relevant pages that is also collapsable for smaller media.
 * Search and filter feature to display relevant reviews based on category search items.
 * Users can add, edit or delete their own reviews and can view other users reviews but cannot edit or delete.
 
@@ -77,7 +79,6 @@ The website is basic in it's design and layout but this adds to the simplistic t
 Users have the facility to create a login via the login page where a username and password are required for setup and to protect their details. This then allows registered users to to create their own review information and add it to the the application and/or edit or delete this information further.
 
 
-
 # Website features
 Search function bar allowing user logged in or not to view data according to their specific search criteria.
 Add review form facility where users can added their own data and submit to be displayed on the review home page.
@@ -87,6 +88,9 @@ Since the home page of the app is displaying all content review cards then it wo
 according to a page system enabling the user to scroll through pages of layout rather than have to scroll down screen and view everything entered as content onto the application.
 
 Although the user can add their reviews, the application doesnt currently support the ability to host all reviews relevant to the same game name. In other words, the single topic of one game does not allow users to add their reviews specifically to this game title, something that can be further implemented by adding all game choices to the Mongo Database and allowing the user to select at the time of creating a review. All similar reviews can then be grouped under that game name heading so the user has access to all reviews which are in relation to that specific game name.
+
+In this project I did not implement a 404 error page if there was a break in the program, something I would like to introduce in the future so that the user is aware that they have
+got to an area which is not valid. This is typical of a scenario where another user could type in the edit_review function directly into the browser but since I have edited the code to return the user to log in screen this might be something for future projects where a 404 error page would instead pop up to notify the user that this is not possible and to return to another page within the application.
 
 # Future Features
 Links to retro gaming purchase websites.
@@ -134,8 +138,9 @@ remain visible are in relation to placeholder image not conforming to Upper case
 
 ## HTML
 Testing for responsive element of this app took considerable time although i chose a pre built template from Bootstrap as the framework for my front end application but this required additional
-container and the use of a cards insert from Bootstrap to visually display the review data.
+containers and the use of a cards insert from Bootstrap to visually display the review data.
 ## CSS
+
 ## Javascript
 ## Flask (Python)
 
@@ -144,8 +149,8 @@ container and the use of a cards insert from Bootstrap to visually display the r
 
 
 
-# Summary of Testing
-Calling the @app.route (open_review) proved to be a big task since the focus for an individual review was based on the Object Id applicable to that specific review detail.
+# User Story Testing
+
 
 
 # Project Challenges
@@ -217,12 +222,6 @@ https://pretagteam.com/ - Javascript Pop-Up to notify user before deletion of da
 * Heroku used for deplyment of the application.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# NOTES - To be deleted upon completion of the Readme 
-
-* Feel free to reuse the authentication from the mini-project. The focus of this milestone project is on the data, rather than any business logic.
-* If you reproduce someone else's work, you must credit it.
-* 
 
 
 
