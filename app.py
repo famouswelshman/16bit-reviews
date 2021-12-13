@@ -16,7 +16,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-placeholder_image = 'https://us.123rf.com/450wm/pavelstasevich/pavelstasevich1811/pavelstasevich181101028/112815904-no-image-available-icon-flat-vector-illustration.jpg?ver=6'
+placeholder_image = "{{ url_for('static', filename='images/Logo.png') }}"
 
 
 @app.route("/")
@@ -49,9 +49,10 @@ def register():
     return render_template("register.html")
 
 
-# LOGIN 
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    ''' user can login via page and database checks username and password and matches '''
     if request.method == "POST":
         # Checks MongoDB for username existing
         existing_user = mongo.db.users.find_one(
