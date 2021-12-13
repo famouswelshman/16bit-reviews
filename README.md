@@ -116,18 +116,25 @@ The home page would display multiple reviews and the responsive element of the p
 ![MongoDB_schematic](https://github.com/famouswelshman/reviews-16bit/blob/main/static/wireframes/MongoDB_Schematic.jpg)
 
 
-# Testing
+# Validation
 
 # Code Validation
 ## HTML
+HTML code for all pages passed through W3C Markup Checker shows some warnings and errors in relation to Jinja templating.
 ## CSS
+CSS code passed via WC3 CSS Validator with no errors.
 ## Javascript
+Checked via Jshint.com and no errors
 ## Flask (Python)
+1 error remains showing under Gitpod for app.py and this shows 'env' imported but unused. This instruction to include environment was in the training module
+therefore kept this code in the Flask/python app. Some warnings included the addition of Docstring which I then included in the app.py. Warnings that still
+remain visible are in relation to placeholder image not conforming to Upper case although this does not effect the functionality of the application.
 
-
-# Validation
+# Testing
 
 ## HTML
+Testing for responsive element of this app took considerable time although i chose a pre built template from Bootstrap as the framework for my front end application but this required additional
+container and the use of a cards insert from Bootstrap to visually display the review data.
 ## CSS
 ## Javascript
 ## Flask (Python)
@@ -157,7 +164,6 @@ Since I wanted to include a URL image address input in the 'Create_review' the i
 &nbsp;
 &nbsp;
 Fixing the review form together to be responsive and capture the data with (required), ensuring the correct database fields where added to transfer data to MongoDB.
-
 
 
 
