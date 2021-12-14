@@ -152,6 +152,19 @@ remain visible are in relation to placeholder image not conforming to Upper case
 
 # Testing
 
+Testing done within browser via Dev Tools
+My testing of the application was done predominantly using Google Chrome from desktop. The application is responsive via Dev tools and although the application content is slightly compremised on smaller devices it’s still viewable and the functionality is still available. Content on a medium media device shows the content similar to desktop. The colapsable navbar is available and makes for easy navigation.
+Links within the application such as image and script were updated as url_for links in order to function across the application hosted via github and Heroku. In the first instance of creating this application I maintained static links which would not display when uploaded via Heroku.
+
+# Bugs
+The bugs in this project came about if user were to copy and paste an edit/delete link from another user id into the browser. I managed to edit the app.py file so that In the event that a different user would attempt to add an edit or delete extension to the file, flask would identify the user and if the current user was incorrect then the function would refer the user back to the login page in order to prompt the user to login.
+
+# Account creation
+Several registrations made on the site to prove that this functionality works. The database records the username and password and access to the application is then valid.
+
+# Functionality
+The user logged in allows access to their respective review content, allowing to edit and delete their content only. User who is logged in does not have access to other user review content and cannot edit and delete any data other than their own.
+
 ## HTML
 Testing for responsive element of this app took considerable time although i chose a pre built template from Bootstrap as the framework for my front end application but this required additional
 containers and the use of a cards insert from Bootstrap to visually display the review data.
@@ -159,13 +172,10 @@ containers and the use of a cards insert from Bootstrap to visually display the 
 The css file was built on basic structure to ensure the application was responsive. Part of the css file was part of the Bootstrap pre-built web page which I factored into use in this project.
 
 ## Javascript
+Minimum of Javascript was added to this project but the feature included is a fail safe prompt which actions a dropdown prompt to the user when they click on the delete button in order to delete a review. This function prompts the user to acknowledge their request to delete and allow user to complete this action by confirming yes to delete or no to return to the content.
+
 ## Flask (Python)
-
-
-# Functionality Testing
-
-
-
+Creation of the app.py based on the Flask framework within Python incorporates the main functionality as per the code institute learning module but in addition to this includes original functions for user to view their own content grouped together on the 'Manage your reviews' page and being able to access individual review content by its respective id according to Mongo DB.
 
 # Project Challenges
 Getting the review cards to show up in sequence and semetrically on the home page required selecting use of Bootstrap grid code to enable the content of each review to show in a structured fashion on screen and be responsive to all media screen sizes.
@@ -240,7 +250,3 @@ https://pretagteam.com/ - Javascript Pop-Up to notify user before deletion of da
 
 
 
-SUBMISSION PROCEDURE:
-You should submit your milestone project for this module by filling out the form on the Project Submissions page and providing links to both your source code on GitHub and the live deployed project (e.g. on Heroku or GitHub Pages). Submit each project whenever it's ready so that you'll be able to use the assessor's feedback to guide your work on the following projects.
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
