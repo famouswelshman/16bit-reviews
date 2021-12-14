@@ -154,6 +154,8 @@ Links within the application such as image and script were updated as url_for li
 # Bugs
 The bugs in this project came about if user were to copy and paste an edit/delete link from another user id into the browser. I managed to edit the app.py file so that In the event that a different user would attempt to add an edit or delete extension to the file, flask would identify the user and if the current user was incorrect then the function would refer the user back to the login page in order to prompt the user to login.
 
+Issues with the loading on the Gitpod IDE. Seemed that there were server issues causing the environment function to stop communicating. By stopping the workspace and re-loading managed to fix the fault.
+
 # Account creation
 Several registrations made on the site to prove that this functionality works. The database records the username and password and access to the application is then valid.
 
