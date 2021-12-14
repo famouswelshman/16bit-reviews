@@ -3,9 +3,9 @@
 
 <!-----SEARCH FUNCTION------>
 
-<form class="col-12 col-md-6 col-sm-6" method="POST" action="{{ url_for('search') }}">
+<form class="col-12" method="POST" action="{{ url_for('search') }}">
   <div class="search-container>">
-    <div class="input-group mb-6">
+    <div class="input-group mb-12">
       <input type="text" name="query" id="query" minlength="3" class="form-control form-control-lg"
         placeholder="Search Reviews" required>
       <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i> Search</button>
@@ -20,7 +20,8 @@
 <div class="card-container">
   <div class="row">
     {% for review in reviews %}
-    <div class="col col-lg-12 col-md-3 col-sm-12">
+    {% if review.created_by == session.user %}
+    <div class="col col-lg-2 col-md-3 col-sm-6">
       <div class="card">
         <img src="{{ review.img_url }}" class="card-img-top" alt="game picture"
           onerror="this.src='/static/images/default_logo.jpg'">
@@ -28,25 +29,17 @@
         <div class="card-details">
           {{ review.review_input }}
         </div>
-        
         <div class="card-body">
           <p class="card-text" style="height: 10px;"><a href="{{ url_for('open_review', review_id=review._id) }}"
               class="btn btn-primary">Read Review..</a>
           </p>
           <br>
-          <div class="creator">Created by:&nbsp{{ review.created_by }}</div>
+          <div class="creator">Created by:&nbsp{{ review.created_by }}
+          </div>
         </div>
       </div>
     </div>
-    
-    {% else %}
-    <h2 class="search-not-found" style="color: red;">No results found</h2>
+    {% endif %}
     {% endfor %}
-  </div>
-</div>
- 
-
-
-
 
     {% endblock %}
