@@ -68,7 +68,7 @@ First time user can view the content of the application via the home page and na
 User who is logged into the account would like to open all the review data relevant to their account and they can do this by clicking on the ‘Manage your reviews’ link within the navbar. This page is available to filter all the review content relavent to the user. 
 
 ### User story 4
-User who is logged into the account would like to return to their previous review and edit this to either add to the content or simply amend it and be able to save this which will in turn update to the backend database and then return to display on the homepage. Alternatively, user can access their review information and be able to delete this from the applicat
+User who is logged into the account would like to return to their previous review and edit this to either add to the content or simply amend it and be able to save this which will in turn update to the backend database and then return to display on the homepage. Alternatively, user can access their review information and be able to delete this from the application.
 
 ## Structure:
 * Each web page will display consistent Navbar and footer along with hero image.
