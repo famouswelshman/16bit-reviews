@@ -7,7 +7,7 @@ Website is hosted via Heroku and can be found via link : https://reviews-16bit.h
 # Purpose of this project – Milestone 3
 The purpose of this project was to create a User friendly, front and back-end application to allow user to Create, Read, Update and Delete data under their own user login.
 
-Users can read review data and registered users can add, edit and delete their review data.
+Users can read review data and registered users can view, add, edit and delete their review data.
 
 A website application that allows users to view 16 bit console game details and user reviews by method of search using key words in relation to the console brands available or key words pertaining to the games featured on the site. Upon completion of user registering a username and password, user can further search and add their own reviews alongside the game and click on a star based rating function. User will be able to edit and/or delete their reviews and whilst this information is visible to all users, editing and deletion will only be achieved by the user who added this.
 
@@ -40,7 +40,6 @@ Additional libraries and external APIs which include Bootstrap.
 * Python + Flask
 * MongoDB
 * Heroku
-* Task Manager
 * Jinja
 * Javascript / Jquery
 
@@ -59,16 +58,16 @@ Additional libraries and external APIs which include Bootstrap.
 * User wants security features in place so that other users cannot edit or delete their own reviews.
 
 ### User story 1
-First time user will visit the website application and be able to view a homepage consisting of a layout of reviews based on users input. They can search the application via the search facility in order to return reviews which are relvant to their search. This could be a search for a specific console or a game name or indeed review content. The user can then view this content for intersting review content.
+First time user will visit the website application and be able to view a homepage consisting of a layout of reviews based on users input. They can search the application via the search facility in order to return reviews which are relvant to their search. This could be a search for a specific console or a game name or indeed review content. The user can then view this content in their own interests.
 
 ### User story 2
-First time user can view the content of the application via the home page and navigate via the navbar to registration page and create an account. User then logged in can still view all review data but this allows them to create their own reviews and add to the application which in turn will show via the home page. 
+First time user can view the content of the application via the home page and navigate via the navbar to registration page and create an account. Once user is logged in they can still view all review data content but logged in functionality allows them to create their own reviews and add to the application which in turn will show via the home page. 
 
 ### User story 3
-User who is logged into the account would like to open all the review data relevant to their account and they can do this by clicking on the ‘Manage your reviews’ link within the navbar. This page is available to filter all the review content relavent to the user. 
+User who is logged into the account would like to open all the review data relevant to their account and they can do this by clicking on the ‘Manage your reviews’ link within the navbar. This page will filter and display all the review content relavent to the user. 
 
 ### User story 4
-User who is logged into the account would like to return to their previous review and edit this to either add to the content or simply amend it and be able to save this which will in turn update to the backend database and then return to display on the homepage. Alternatively, user can access their review information and be able to delete this from the application.
+User who is logged into the account would like to return to their previous review and edit this to either add to the content or simply amend it and be able to save this which will in turn update to the backend database and then return to display on the homepage. Alternatively, user can access their review information and be able to delete this from the application all together, in turn removing this data from the database.
 
 ## Structure:
 * Each web page will display consistent Navbar and footer along with hero image.
@@ -133,9 +132,6 @@ The home page would display multiple reviews and the responsive element of the p
 
 
 
-ion.
-
-
 # Validation
 
 # Code Validation
@@ -151,7 +147,6 @@ therefore kept this code in the Flask/python app. Some warnings included the add
 remain visible are in relation to placeholder image not conforming to Upper case although this does not effect the functionality of the application.
 
 # Testing
-
 Testing done within browser via Dev Tools
 My testing of the application was done predominantly using Google Chrome from desktop. The application is responsive via Dev tools and although the application content is slightly compremised on smaller devices it’s still viewable and the functionality is still available. Content on a medium media device shows the content similar to desktop. The colapsable navbar is available and makes for easy navigation.
 Links within the application such as image and script were updated as url_for links in order to function across the application hosted via github and Heroku. In the first instance of creating this application I maintained static links which would not display when uploaded via Heroku.
@@ -168,6 +163,7 @@ The user logged in allows access to their respective review content, allowing to
 ## HTML
 Testing for responsive element of this app took considerable time although i chose a pre built template from Bootstrap as the framework for my front end application but this required additional
 containers and the use of a cards insert from Bootstrap to visually display the review data.
+
 ## CSS
 The css file was built on basic structure to ensure the application was responsive. Part of the css file was part of the Bootstrap pre-built web page which I factored into use in this project.
 
@@ -200,35 +196,32 @@ Fixing the review form together to be responsive and capture the data with (requ
 
 ## Github
 https://github.com/
-
 I originally had a Github account setup for previous milestone submissions therefore for this project the same setup applied albeit this time, since the 
 project code is driven by python then Github would serve as a virtual platform to host the files and have the files be accesible for marking.
 Since this project is driveN by Python(Flask) then Github would not be able to host this as a complete, functioning application and was therefore linked to Heroku.
 
 # Gitpod
-
 My project was created using the Gitpod IDE. All folders and files were created and saved to the repository and the workspace was accessed daily to edit, create and delete 
 the neccessary content. Since this projects content required numerous dependencies, it was recommended that we use the Code Institute full template since this came with 
 all the neccessary pre-installed tools to enable use of the various programs. Project created included regular commits to show detail of its construction. Final project accessible via Github, main branch set to public.
 
 ## Heroku
 https://id.heroku.com/login
-
 In order to run this project application, an account was required to be setup via Heroku. Deployment setup required which required connection to the Github repository and then
 creating the app in order to view. In order for the data to be accessed from MongoDB, we had to setup the connection details via the Confi Vars input fields where the DB name and secret key will be stored. This process of linking both Github and MongoDB was shown via the Task Manager mini project during the learning modules therefore the process
 of it's setup was relatively straightforward and differs slightly in that unique database name and connection details would be different.
 
 ## MongoDB
 https://account.mongodb.com/
-
 In order to meet the project requirements, the use of MongoDB as a non-relational database was required. Here is where the data is stored as a result of the python app submit functions running on the application. In turn, selective data is then returned to the application to be read, edited and deleted as per the user who is signed into the application. The connection between the project files and the DB is maintained via the env.py file and this is classed as hidden and does not get uploaded to Github for security purposes.
-
 
 # Media Credits
 * www.16bitgladiators.com - Use of art for custom Logo created with Photoshop
+* https://www.romsgames.net/ - using their game covers as address link url's
+
 
 # Other Credits
-StartBootstrap - E-Commerce template downloaded and customozed for project
+StartBootstrap - E-Commerce template downloaded and customized for project
 https://pretagteam.com/ - Javascript Pop-Up to notify user before deletion of data.
 
 
