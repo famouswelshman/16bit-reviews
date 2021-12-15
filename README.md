@@ -136,7 +136,8 @@ The home page would display multiple reviews and the responsive element of the p
 
 # Code Validation
 ## HTML
-HTML code for all pages passed through W3C Markup Checker shows some warnings and errors in relation to Jinja templating.
+HTML code for all pages passed through W3C Markup Checker shows some warnings and errors in relation to Jinja templating. I have also been made aware of some divs which
+remain open but closing these completely corrupts the display of the containers, something I learnt late in the project before submit.
 ## CSS
 CSS code passed via WC3 CSS Validator with no errors.
 ## Javascript
@@ -150,6 +151,9 @@ remain visible are in relation to placeholder image not conforming to Upper case
 Testing done within browser via Dev Tools
 My testing of the application was done predominantly using Google Chrome from desktop. The application is responsive via Dev tools and although the application content is slightly compremised on smaller devices it’s still viewable and the functionality is still available. Content on a medium media device shows the content similar to desktop. The colapsable navbar is available and makes for easy navigation.
 Links within the application such as image and script were updated as url_for links in order to function across the application hosted via github and Heroku. In the first instance of creating this application I maintained static links which would not display when uploaded via Heroku.
+
+I wanted to create a user_reviews page on the app so that the user could see all the review data relevant to their user account and no other. Firt attempt at this, I incorporated the object_id within the app.py function but realised that all data would feed into the user_reviews page therefore to eleviate this traffic, I added dot notation 
+code into the user_reviews page which focuses on the user - {% if review.created_by == session.user %} which in turn would simply filter any review data relevant to the current user logged into the app.
 
 # Bugs
 The bugs in this project came about if user were to copy and paste an edit/delete link from another user id into the browser. I managed to edit the app.py file so that In the event that a different user would attempt to add an edit or delete extension to the file, flask would identify the user and if the current user was incorrect then the function would refer the user back to the login page in order to prompt the user to login.
