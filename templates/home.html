@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!-----SEARCH FUNCTION------>
+<!----- Search Function  ------>
 
 <form class="col-12" method="POST" action="{{ url_for('search') }}">
   <div class="search-container>">
@@ -15,7 +15,7 @@
   </div>
 </form>
 
-<!-----Review Card Template------>
+<!----- Review Card Template ------>
 <div class="card-container">
   <div class="row">
     {% for review in reviews %}
