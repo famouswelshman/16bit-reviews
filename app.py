@@ -22,7 +22,7 @@ placeholder_image = "{{ url_for('static', filename='images/Logo.png') }}"
 @app.route("/")
 @app.route("/home")
 def get_reviews():
-    ''' This is the Home page viewed by user upon entering application '''
+    
     reviews = mongo.db.reviews.find()
     return render_template("home.html", reviews=reviews)
 
@@ -191,4 +191,4 @@ def user_reviews():
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=False)
+            debug=True)
